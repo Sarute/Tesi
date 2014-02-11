@@ -1,0 +1,21 @@
+Require Import String List Coq.Strings.String Coq.Lists.List.
+Add LoadPath "/Users/Saretta/Desktop/CMTI/Tesi/MonadiTesi".
+Require Import StoreMonadTesi.
+Require Import ProvaCertificazione1.
+
+
+Extraction Language Haskell.
+
+
+Extract Constant MemoryState.loc => "String".
+Extract Constant MemoryState.val => "Int".
+Extract Constant MemoryState.st => "([]) ((,) String Int)".
+
+
+Extract Constant MemoryState.M "a"=> "State St a".
+Extract Constant MemoryState.ret => "return".
+Extract Constant MemoryState.bind => "(>>=)".
+Extract Inductive unit => "()" [ "()" ].
+
+
+Extraction "ProvaCertificazione"  Certificazione_ret Certificazione_ret2.

@@ -1,0 +1,471 @@
+%module main:EstrazzioneHaskellTesi
+  main:EstrazzioneHaskellTesi.emptyStore :: %forall aarM . ghczmprim:GHCziTypes.ZMZN
+                                                           aarM =
+    ghczmprim:GHCziTypes.ZMZN;
+  zddMonadrxL :: base:GHCziBase.Monad
+                 (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                  (ghczmprim:GHCziTypes.ZMZN
+                   (ghczmprim:GHCziTuple.Z2T
+                    (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                    ghczmprim:GHCziTypes.Int))
+                  transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity) =
+    transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.zdfMonadStateT
+    @ (ghczmprim:GHCziTypes.ZMZN
+       (ghczmprim:GHCziTuple.Z2T
+        (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+        ghczmprim:GHCziTypes.Int))
+    @ transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+    transformerszm0zi3zi0zi0:DataziFunctorziIdentity.zdfMonadIdentity;
+  main:EstrazzioneHaskellTesi.ret :: %forall a1agy . a1agy ->
+                                                     transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                     (ghczmprim:GHCziTypes.ZMZN
+                                                      (ghczmprim:GHCziTuple.Z2T
+                                                       (ghczmprim:GHCziTypes.ZMZN
+                                                        ghczmprim:GHCziTypes.Char)
+                                                       ghczmprim:GHCziTypes.Int))
+                                                     transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                                     a1agy =
+    \ @ a1zz ->
+        base:GHCziBase.return
+        @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+           (ghczmprim:GHCziTypes.ZMZN
+            (ghczmprim:GHCziTuple.Z2T
+             (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+             ghczmprim:GHCziTypes.Int))
+           transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+        zddMonadrxL @ a1zz;
+  main:EstrazzioneHaskellTesi.bind :: %forall a1agw a2agx . (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                             (ghczmprim:GHCziTypes.ZMZN
+                                                              (ghczmprim:GHCziTuple.Z2T
+                                                               (ghczmprim:GHCziTypes.ZMZN
+                                                                ghczmprim:GHCziTypes.Char)
+                                                               ghczmprim:GHCziTypes.Int))
+                                                             transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                                             a1agw)
+                                                            ->
+                                                            (a1agw ->
+                                                             transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                             (ghczmprim:GHCziTypes.ZMZN
+                                                              (ghczmprim:GHCziTuple.Z2T
+                                                               (ghczmprim:GHCziTypes.ZMZN
+                                                                ghczmprim:GHCziTypes.Char)
+                                                               ghczmprim:GHCziTypes.Int))
+                                                             transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                                             a2agx)
+                                                            ->
+                                                            transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                            (ghczmprim:GHCziTypes.ZMZN
+                                                             (ghczmprim:GHCziTuple.Z2T
+                                                              (ghczmprim:GHCziTypes.ZMZN
+                                                               ghczmprim:GHCziTypes.Char)
+                                                              ghczmprim:GHCziTypes.Int))
+                                                            transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                                            a2agx =
+    \ @ a1v @ a2w ->
+        base:GHCziBase.zgzgze
+        @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+           (ghczmprim:GHCziTypes.ZMZN
+            (ghczmprim:GHCziTuple.Z2T
+             (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+             ghczmprim:GHCziTypes.Int))
+           transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+        zddMonadrxL @ a1v @ a2w;
+  zddEqrxM :: ghczmprim:GHCziClasses.Eq
+              (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) =
+    ghczmprim:GHCziClasses.zdfEqZMZN @ ghczmprim:GHCziTypes.Char
+    ghczmprim:GHCziClasses.zdfEqChar;
+  main:EstrazzioneHaskellTesi.lookUp :: (ghczmprim:GHCziTypes.ZMZN
+                                         ghczmprim:GHCziTypes.Char)
+                                        ->
+                                        transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                        (ghczmprim:GHCziTypes.ZMZN
+                                         (ghczmprim:GHCziTuple.Z2T
+                                          (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                          ghczmprim:GHCziTypes.Int))
+                                        transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                        ghczmprim:GHCziTypes.Int =
+    \ (locagzz::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) ->
+        %let %rec
+             {varLookUpListzqagA :: (ghczmprim:GHCziTypes.ZMZN
+                                     ghczmprim:GHCziTypes.Char)
+                                    ->
+                                    (ghczmprim:GHCziTypes.ZMZN
+                                     (ghczmprim:GHCziTuple.Z2T
+                                      (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                      ghczmprim:GHCziTypes.Int))
+                                    -> base:DataziMaybe.Maybe ghczmprim:GHCziTypes.Int =
+                \ (nameah5::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                  (dsdx3::ghczmprim:GHCziTypes.ZMZN
+                          (ghczmprim:GHCziTuple.Z2T
+                           (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                           ghczmprim:GHCziTypes.Int)) ->
+                    %case (base:DataziMaybe.Maybe ghczmprim:GHCziTypes.Int) dsdx3
+                    %of (wildXk::ghczmprim:GHCziTypes.ZMZN
+                                 (ghczmprim:GHCziTuple.Z2T
+                                  (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                  ghczmprim:GHCziTypes.Int))
+                      {ghczmprim:GHCziTypes.ZMZN ->
+                         base:DataziMaybe.Nothing @ ghczmprim:GHCziTypes.Int;
+                       ghczmprim:GHCziTypes.ZC
+                       (ds1dx4::ghczmprim:GHCziTuple.Z2T
+                                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                ghczmprim:GHCziTypes.Int)
+                       (xsah9::ghczmprim:GHCziTypes.ZMZN
+                               (ghczmprim:GHCziTuple.Z2T
+                                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                ghczmprim:GHCziTypes.Int)) ->
+                         %case (base:DataziMaybe.Maybe ghczmprim:GHCziTypes.Int) ds1dx4
+                         %of (wild1Xd::ghczmprim:GHCziTuple.Z2T
+                                       (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                       ghczmprim:GHCziTypes.Int)
+                           {ghczmprim:GHCziTuple.Z2T
+                            (nah7::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                            (vah8::ghczmprim:GHCziTypes.Int) ->
+                              %case (base:DataziMaybe.Maybe
+                                     ghczmprim:GHCziTypes.Int) (ghczmprim:GHCziClasses.zeze
+                                                                @ (ghczmprim:GHCziTypes.ZMZN
+                                                                   ghczmprim:GHCziTypes.Char)
+                                                                zddEqrxM nameah5 nah7)
+                              %of (wild2Xg::ghczmprim:GHCziTypes.Bool)
+                                {ghczmprim:GHCziTypes.False ->
+                                   varLookUpListzqagA nameah5 xsah9;
+                                 ghczmprim:GHCziTypes.True ->
+                                   base:DataziMaybe.Just @ ghczmprim:GHCziTypes.Int vah8}}}}
+        %in base:GHCziBase.zgzgze
+            @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+               (ghczmprim:GHCziTypes.ZMZN
+                (ghczmprim:GHCziTuple.Z2T
+                 (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                 ghczmprim:GHCziTypes.Int))
+               transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+            zddMonadrxL
+            @ (ghczmprim:GHCziTypes.ZMZN
+               (ghczmprim:GHCziTuple.Z2T
+                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                ghczmprim:GHCziTypes.Int))
+            @ ghczmprim:GHCziTypes.Int
+            (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.get
+             @ (ghczmprim:GHCziTypes.ZMZN
+                (ghczmprim:GHCziTuple.Z2T
+                 (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                 ghczmprim:GHCziTypes.Int))
+             @ transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+             transformerszm0zi3zi0zi0:DataziFunctorziIdentity.zdfMonadIdentity)
+            (\ (memamD::ghczmprim:GHCziTypes.ZMZN
+                        (ghczmprim:GHCziTuple.Z2T
+                         (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                         ghczmprim:GHCziTypes.Int)) ->
+                 %case (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                        (ghczmprim:GHCziTypes.ZMZN
+                         (ghczmprim:GHCziTuple.Z2T
+                          (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                          ghczmprim:GHCziTypes.Int))
+                        transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                        ghczmprim:GHCziTypes.Int) (varLookUpListzqagA locagzz memamD)
+                 %of (wildXk::base:DataziMaybe.Maybe ghczmprim:GHCziTypes.Int)
+                   {base:DataziMaybe.Nothing ->
+                      base:GHCziBase.return
+                      @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                         (ghczmprim:GHCziTypes.ZMZN
+                          (ghczmprim:GHCziTuple.Z2T
+                           (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                           ghczmprim:GHCziTypes.Int))
+                         transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+                      zddMonadrxL @ ghczmprim:GHCziTypes.Int
+                      (ghczmprim:GHCziTypes.Izh (0::ghczmprim:GHCziPrim.Intzh));
+                    base:DataziMaybe.Just (samE::ghczmprim:GHCziTypes.Int) ->
+                      base:GHCziBase.return
+                      @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                         (ghczmprim:GHCziTypes.ZMZN
+                          (ghczmprim:GHCziTuple.Z2T
+                           (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                           ghczmprim:GHCziTypes.Int))
+                         transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+                      zddMonadrxL @ ghczmprim:GHCziTypes.Int samE});
+  main:EstrazzioneHaskellTesi.update :: (ghczmprim:GHCziTypes.ZMZN
+                                         ghczmprim:GHCziTypes.Char)
+                                        ->
+                                        ghczmprim:GHCziTypes.Int ->
+                                        transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                        (ghczmprim:GHCziTypes.ZMZN
+                                         (ghczmprim:GHCziTuple.Z2T
+                                          (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                          ghczmprim:GHCziTypes.Int))
+                                        transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                        ghczmprim:GHCziTuple.Z0T =
+    \ (stramF::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+      (valamG::ghczmprim:GHCziTypes.Int) ->
+        %let %rec
+             {varUpdatezqamH :: (ghczmprim:GHCziTypes.ZMZN
+                                 ghczmprim:GHCziTypes.Char)
+                                ->
+                                ghczmprim:GHCziTypes.Int ->
+                                (ghczmprim:GHCziTypes.ZMZN
+                                 (ghczmprim:GHCziTuple.Z2T
+                                  (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                  ghczmprim:GHCziTypes.Int))
+                                ->
+                                ghczmprim:GHCziTypes.ZMZN
+                                (ghczmprim:GHCziTuple.Z2T
+                                 (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                 ghczmprim:GHCziTypes.Int) =
+                \ (nameamI::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                  (nvalamJ::ghczmprim:GHCziTypes.Int)
+                  (dsdwV::ghczmprim:GHCziTypes.ZMZN
+                          (ghczmprim:GHCziTuple.Z2T
+                           (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                           ghczmprim:GHCziTypes.Int)) ->
+                    %case (ghczmprim:GHCziTypes.ZMZN
+                           (ghczmprim:GHCziTuple.Z2T
+                            (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                            ghczmprim:GHCziTypes.Int)) dsdwV
+                    %of (wildXn::ghczmprim:GHCziTypes.ZMZN
+                                 (ghczmprim:GHCziTuple.Z2T
+                                  (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                  ghczmprim:GHCziTypes.Int))
+                      {ghczmprim:GHCziTypes.ZMZN ->
+                         ghczmprim:GHCziTypes.ZC
+                         @ (ghczmprim:GHCziTuple.Z2T
+                            (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                            ghczmprim:GHCziTypes.Int)
+                         (ghczmprim:GHCziTuple.Z2T
+                          @ (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                          @ ghczmprim:GHCziTypes.Int nameamI nvalamJ)
+                         (ghczmprim:GHCziTypes.ZMZN
+                          @ (ghczmprim:GHCziTuple.Z2T
+                             (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                             ghczmprim:GHCziTypes.Int));
+                       ghczmprim:GHCziTypes.ZC
+                       (ds1dwW::ghczmprim:GHCziTuple.Z2T
+                                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                ghczmprim:GHCziTypes.Int)
+                       (xsamO::ghczmprim:GHCziTypes.ZMZN
+                               (ghczmprim:GHCziTuple.Z2T
+                                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                ghczmprim:GHCziTypes.Int)) ->
+                         %case (ghczmprim:GHCziTypes.ZMZN
+                                (ghczmprim:GHCziTuple.Z2T
+                                 (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                 ghczmprim:GHCziTypes.Int)) ds1dwW
+                         %of (wild1Xg::ghczmprim:GHCziTuple.Z2T
+                                       (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                       ghczmprim:GHCziTypes.Int)
+                           {ghczmprim:GHCziTuple.Z2T
+                            (namM::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                            (vamN::ghczmprim:GHCziTypes.Int) ->
+                              %case (ghczmprim:GHCziTypes.ZMZN
+                                     (ghczmprim:GHCziTuple.Z2T
+                                      (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                      ghczmprim:GHCziTypes.Int)) (ghczmprim:GHCziClasses.zeze
+                                                                  @ (ghczmprim:GHCziTypes.ZMZN
+                                                                     ghczmprim:GHCziTypes.Char)
+                                                                  zddEqrxM nameamI namM)
+                              %of (wild2Xj::ghczmprim:GHCziTypes.Bool)
+                                {ghczmprim:GHCziTypes.False ->
+                                   ghczmprim:GHCziTypes.ZC
+                                   @ (ghczmprim:GHCziTuple.Z2T
+                                      (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                      ghczmprim:GHCziTypes.Int)
+                                   (ghczmprim:GHCziTuple.Z2T
+                                    @ (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                    @ ghczmprim:GHCziTypes.Int namM vamN)
+                                   (varUpdatezqamH nameamI nvalamJ xsamO);
+                                 ghczmprim:GHCziTypes.True ->
+                                   ghczmprim:GHCziTypes.ZC
+                                   @ (ghczmprim:GHCziTuple.Z2T
+                                      (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                      ghczmprim:GHCziTypes.Int)
+                                   (ghczmprim:GHCziTuple.Z2T
+                                    @ (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                    @ ghczmprim:GHCziTypes.Int namM nvalamJ)
+                                   xsamO}}}}
+        %in base:GHCziBase.zgzgze
+            @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+               (ghczmprim:GHCziTypes.ZMZN
+                (ghczmprim:GHCziTuple.Z2T
+                 (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                 ghczmprim:GHCziTypes.Int))
+               transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+            zddMonadrxL
+            @ (ghczmprim:GHCziTypes.ZMZN
+               (ghczmprim:GHCziTuple.Z2T
+                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                ghczmprim:GHCziTypes.Int))
+            @ ghczmprim:GHCziTuple.Z0T
+            (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.get
+             @ (ghczmprim:GHCziTypes.ZMZN
+                (ghczmprim:GHCziTuple.Z2T
+                 (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                 ghczmprim:GHCziTypes.Int))
+             @ transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+             transformerszm0zi3zi0zi0:DataziFunctorziIdentity.zdfMonadIdentity)
+            (\ (memamP::ghczmprim:GHCziTypes.ZMZN
+                        (ghczmprim:GHCziTuple.Z2T
+                         (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                         ghczmprim:GHCziTypes.Int)) ->
+                 transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.put
+                 @ (ghczmprim:GHCziTypes.ZMZN
+                    (ghczmprim:GHCziTuple.Z2T
+                     (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                     ghczmprim:GHCziTypes.Int))
+                 @ transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                 transformerszm0zi3zi0zi0:DataziFunctorziIdentity.zdfMonadIdentity
+                 (varUpdatezqamH stramF valamG memamP));
+  main:EstrazzioneHaskellTesi.swapzuprogram :: (ghczmprim:GHCziTypes.ZMZN
+                                                ghczmprim:GHCziTypes.Char)
+                                               ->
+                                               (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                               ->
+                                               transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                               (ghczmprim:GHCziTypes.ZMZN
+                                                (ghczmprim:GHCziTuple.Z2T
+                                                 (ghczmprim:GHCziTypes.ZMZN
+                                                  ghczmprim:GHCziTypes.Char)
+                                                 ghczmprim:GHCziTypes.Int))
+                                               transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+                                               ghczmprim:GHCziTuple.Z0T =
+    \ (l1amQ::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+      (l2amR::ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) ->
+        main:EstrazzioneHaskellTesi.bind @ ghczmprim:GHCziTypes.Int
+        @ ghczmprim:GHCziTuple.Z0T
+        (main:EstrazzioneHaskellTesi.lookUp l1amQ)
+        (\ (xamS::ghczmprim:GHCziTypes.Int) ->
+             main:EstrazzioneHaskellTesi.bind @ ghczmprim:GHCziTypes.Int
+             @ ghczmprim:GHCziTuple.Z0T
+             (main:EstrazzioneHaskellTesi.lookUp l2amR)
+             (\ (yamT::ghczmprim:GHCziTypes.Int) ->
+                  main:EstrazzioneHaskellTesi.bind @ ghczmprim:GHCziTuple.Z0T
+                  @ ghczmprim:GHCziTuple.Z0T
+                  (main:EstrazzioneHaskellTesi.update l1amQ yamT)
+                  (\ (x0amU::ghczmprim:GHCziTuple.Z0T) ->
+                       main:EstrazzioneHaskellTesi.update l2amR xamS)));
+  main:EstrazzioneHaskellTesi.run :: (ghczmprim:GHCziTypes.ZMZN
+                                      (ghczmprim:GHCziTuple.Z2T
+                                       (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                       ghczmprim:GHCziTypes.Int))
+                                     ->
+                                     ghczmprim:GHCziTypes.ZMZN
+                                     (ghczmprim:GHCziTuple.Z2T
+                                      (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                      ghczmprim:GHCziTypes.Int) =
+    \ (initMemamV::ghczmprim:GHCziTypes.ZMZN
+                   (ghczmprim:GHCziTuple.Z2T
+                    (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                    ghczmprim:GHCziTypes.Int)) ->
+        %let zddMonad1as4 :: base:GHCziBase.Monad
+                             (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                              (ghczmprim:GHCziTypes.ZMZN
+                               (ghczmprim:GHCziTuple.Z2T
+                                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                                ghczmprim:GHCziTypes.Int))
+                              transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity) =
+               transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.zdfMonadStateT
+               @ (ghczmprim:GHCziTypes.ZMZN
+                  (ghczmprim:GHCziTuple.Z2T
+                   (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                   ghczmprim:GHCziTypes.Int))
+               @ transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity
+               transformerszm0zi3zi0zi0:DataziFunctorziIdentity.zdfMonadIdentity
+        %in %case (ghczmprim:GHCziTypes.ZMZN
+                   (ghczmprim:GHCziTuple.Z2T
+                    (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                    ghczmprim:GHCziTypes.Int)) (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.runState
+                                                @ (ghczmprim:GHCziTypes.ZMZN
+                                                   (ghczmprim:GHCziTuple.Z2T
+                                                    (ghczmprim:GHCziTypes.ZMZN
+                                                     ghczmprim:GHCziTypes.Char)
+                                                    ghczmprim:GHCziTypes.Int))
+                                                @ ghczmprim:GHCziTuple.Z0T
+                                                (base:GHCziBase.zgzg
+                                                 @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                    (ghczmprim:GHCziTypes.ZMZN
+                                                     (ghczmprim:GHCziTuple.Z2T
+                                                      (ghczmprim:GHCziTypes.ZMZN
+                                                       ghczmprim:GHCziTypes.Char)
+                                                      ghczmprim:GHCziTypes.Int))
+                                                    transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+                                                 zddMonad1as4 @ ghczmprim:GHCziTuple.Z0T
+                                                 @ ghczmprim:GHCziTuple.Z0T
+                                                 (main:EstrazzioneHaskellTesi.update
+                                                  (ghczmprim:GHCziCString.unpackCStringzh
+                                                   ("myVar1"::ghczmprim:GHCziPrim.Addrzh))
+                                                  (ghczmprim:GHCziTypes.Izh
+                                                   (1::ghczmprim:GHCziPrim.Intzh)))
+                                                 (base:GHCziBase.zgzg
+                                                  @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                     (ghczmprim:GHCziTypes.ZMZN
+                                                      (ghczmprim:GHCziTuple.Z2T
+                                                       (ghczmprim:GHCziTypes.ZMZN
+                                                        ghczmprim:GHCziTypes.Char)
+                                                       ghczmprim:GHCziTypes.Int))
+                                                     transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+                                                  zddMonad1as4 @ ghczmprim:GHCziTuple.Z0T
+                                                  @ ghczmprim:GHCziTuple.Z0T
+                                                  (main:EstrazzioneHaskellTesi.update
+                                                   (ghczmprim:GHCziCString.unpackCStringzh
+                                                    ("myVar2"::ghczmprim:GHCziPrim.Addrzh))
+                                                   (ghczmprim:GHCziTypes.Izh
+                                                    (7::ghczmprim:GHCziPrim.Intzh)))
+                                                  (base:GHCziBase.zgzg
+                                                   @ (transformerszm0zi3zi0zi0:ControlziMonadziTransziStateziLazzy.StateT
+                                                      (ghczmprim:GHCziTypes.ZMZN
+                                                       (ghczmprim:GHCziTuple.Z2T
+                                                        (ghczmprim:GHCziTypes.ZMZN
+                                                         ghczmprim:GHCziTypes.Char)
+                                                        ghczmprim:GHCziTypes.Int))
+                                                      transformerszm0zi3zi0zi0:DataziFunctorziIdentity.Identity)
+                                                   zddMonad1as4 @ ghczmprim:GHCziTuple.Z0T
+                                                   @ ghczmprim:GHCziTuple.Z0T
+                                                   (main:EstrazzioneHaskellTesi.update
+                                                    (ghczmprim:GHCziCString.unpackCStringzh
+                                                     ("myVar3"::ghczmprim:GHCziPrim.Addrzh))
+                                                    (ghczmprim:GHCziTypes.Izh
+                                                     (4::ghczmprim:GHCziPrim.Intzh)))
+                                                   (main:EstrazzioneHaskellTesi.swapzuprogram
+                                                    (ghczmprim:GHCziCString.unpackCStringzh
+                                                     ("myVar1"::ghczmprim:GHCziPrim.Addrzh))
+                                                    (ghczmprim:GHCziCString.unpackCStringzh
+                                                     ("myVar2"::ghczmprim:GHCziPrim.Addrzh))))))
+                                                initMemamV)
+            %of (wildXo::ghczmprim:GHCziTuple.Z2T
+                         ghczmprim:GHCziTuple.Z0T
+                         (ghczmprim:GHCziTypes.ZMZN
+                          (ghczmprim:GHCziTuple.Z2T
+                           (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                           ghczmprim:GHCziTypes.Int)))
+              {ghczmprim:GHCziTuple.Z2T
+               (xarY::ghczmprim:GHCziTuple.Z0T)
+               (aXsq::ghczmprim:GHCziTypes.ZMZN
+                      (ghczmprim:GHCziTuple.Z2T
+                       (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                       ghczmprim:GHCziTypes.Int)) ->
+                 aXsq};
+  zddShowrxN :: base:GHCziShow.Show
+                (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) =
+    base:GHCziShow.zdfShowZMZN @ ghczmprim:GHCziTypes.Char
+    base:GHCziShow.zdfShowChar;
+  main:EstrazzioneHaskellTesi.main :: ghczmprim:GHCziTypes.IO
+                                      ghczmprim:GHCziTuple.Z0T =
+    base:GHCziBase.zd
+    @ (ghczmprim:GHCziTypes.ZMZN
+       (ghczmprim:GHCziTuple.Z2T
+        (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+        ghczmprim:GHCziTypes.Int))
+    @ (ghczmprim:GHCziTypes.IO ghczmprim:GHCziTuple.Z0T)
+    (base:SystemziIO.print
+     @ (ghczmprim:GHCziTypes.ZMZN
+        (ghczmprim:GHCziTuple.Z2T
+         (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+         ghczmprim:GHCziTypes.Int))
+     (base:GHCziShow.zdfShowZMZN
+      @ (ghczmprim:GHCziTuple.Z2T
+         (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+         ghczmprim:GHCziTypes.Int)
+      (base:GHCziShow.zdfShowZLz2cUZR
+       @ (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+       @ ghczmprim:GHCziTypes.Int zddShowrxN base:GHCziShow.zdfShowInt)))
+    (main:EstrazzioneHaskellTesi.run
+     (ghczmprim:GHCziTypes.ZMZN
+      @ (ghczmprim:GHCziTuple.Z2T
+         (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+         ghczmprim:GHCziTypes.Int)));

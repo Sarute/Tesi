@@ -1,0 +1,35 @@
+DIGEST 5d9e718f2d8ba0a43dcb4a1890a2ebba
+FProvaCertificazione1
+R15:20 Coq.Strings.String <> <> lib
+R22:25 Coq.Lists.List <> <> lib
+R27:44 Coq.Strings.String <> <> lib
+R46:59 Coq.Lists.List <> <> lib
+R138:160 StoreMonadInterfaceTesi <> <> lib
+R189:207 StoreMonadInterfaceTesi <> <> mod
+mod 172:185 <> Certificazione
+R224:242 StoreMonadInterfaceTesi <> <> mod
+prf 254:280 Certificazione Ceritificazione_retCompleta
+R296:296 ProvaCertificazione1 Certificazione M defax
+R298:300 ProvaCertificazione1 Certificazione val defax
+R326:328 Coq.Init.Logic <> :type_scope:x_'='_x not
+R305:310 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R325:325 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R304:304 ProvaCertificazione1 <> x var
+R320:322 ProvaCertificazione1 Certificazione ret defax
+R324:324 ProvaCertificazione1 <> y var
+R329:329 ProvaCertificazione1 <> x var
+R353:365 ProvaCertificazione1 Certificazione right_neutral prfax
+R353:365 ProvaCertificazione1 Certificazione right_neutral prfax
+def 389:406 Certificazione Certificazione_ret
+R413:413 ProvaCertificazione1 Certificazione M defax
+R415:417 ProvaCertificazione1 Certificazione val defax
+R424:429 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R444:444 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R423:423 ProvaCertificazione1 <> x var
+R439:441 ProvaCertificazione1 Certificazione ret defax
+R443:443 ProvaCertificazione1 <> y var
+def 458:476 Certificazione Certificazione_ret2
+R483:483 ProvaCertificazione1 Certificazione M defax
+R485:487 ProvaCertificazione1 Certificazione val defax
+R493:493 ProvaCertificazione1 <> x var
+R503:516 ProvaCertificazione1 <> <> mod

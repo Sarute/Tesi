@@ -1,0 +1,67 @@
+DIGEST 87d95da6d4471ac495273f8dc1d64037
+FMonadInterfaceTesi
+modtype 12:26 <> MONAD_INTERFACE
+ax 64:64 MONAD_INTERFACE M
+ax 102:104 MONAD_INTERFACE ret
+R131:131 MonadInterfaceTesi MONAD_INTERFACE M defax
+R133:133 MonadInterfaceTesi <> A var
+R125:125 MonadInterfaceTesi <> A var
+ax 147:150 MONAD_INTERFACE bind
+R196:196 MonadInterfaceTesi MONAD_INTERFACE M defax
+R198:198 MonadInterfaceTesi <> B var
+R188:188 MonadInterfaceTesi MONAD_INTERFACE M defax
+R190:190 MonadInterfaceTesi <> B var
+R183:183 MonadInterfaceTesi <> A var
+R175:175 MonadInterfaceTesi MONAD_INTERFACE M defax
+R177:177 MonadInterfaceTesi <> A var
+R217:220 MonadInterfaceTesi MONAD_INTERFACE bind defax
+not 208 MONAD_INTERFACE :monad_scope:x_'>>='_x
+ax 301:312 MONAD_INTERFACE left_neutral
+R342:342 MonadInterfaceTesi MONAD_INTERFACE M defax
+R344:344 MonadInterfaceTesi <> B var
+R337:337 MonadInterfaceTesi <> A var
+R351:351 MonadInterfaceTesi <> A var
+R370:372 Coq.Init.Logic <> :type_scope:x_'='_x not
+R357:357 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R363:368 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R358:360 MonadInterfaceTesi MONAD_INTERFACE ret defax
+R362:362 MonadInterfaceTesi <> a var
+R369:369 MonadInterfaceTesi <> f var
+R373:373 MonadInterfaceTesi <> f var
+R375:375 MonadInterfaceTesi <> a var
+ax 385:397 MONAD_INTERFACE right_neutral
+R424:424 MonadInterfaceTesi MONAD_INTERFACE M defax
+R426:426 MonadInterfaceTesi <> A var
+R459:461 Coq.Init.Logic <> :type_scope:x_'='_x not
+R432:438 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R457:458 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R431:431 MonadInterfaceTesi <> m var
+R447:447 MonadInterfaceTesi <> A var
+R452:454 MonadInterfaceTesi MONAD_INTERFACE ret defax
+R456:456 MonadInterfaceTesi <> a var
+R462:462 MonadInterfaceTesi <> m var
+ax 472:484 MONAD_INTERFACE associativity
+R515:515 MonadInterfaceTesi MONAD_INTERFACE M defax
+R517:517 MonadInterfaceTesi <> A var
+R529:529 MonadInterfaceTesi MONAD_INTERFACE M defax
+R531:531 MonadInterfaceTesi <> B var
+R524:524 MonadInterfaceTesi <> A var
+R543:543 MonadInterfaceTesi MONAD_INTERFACE M defax
+R545:545 MonadInterfaceTesi <> C var
+R538:538 MonadInterfaceTesi <> B var
+R580:582 Coq.Init.Logic <> :type_scope:x_'='_x not
+R551:556 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R579:579 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R550:550 MonadInterfaceTesi <> m var
+R565:565 MonadInterfaceTesi <> A var
+R573:577 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R570:570 MonadInterfaceTesi <> k var
+R572:572 MonadInterfaceTesi <> x var
+R578:578 MonadInterfaceTesi <> h var
+R583:583 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R591:596 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R585:589 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R584:584 MonadInterfaceTesi <> m var
+R590:590 MonadInterfaceTesi <> k var
+R597:597 MonadInterfaceTesi <> h var
+R605:619 MonadInterfaceTesi <> <> modtype

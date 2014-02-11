@@ -1,0 +1,71 @@
+\message{ !name(thud.tex)}
+%% Le lingue utilizzate, che verranno passate come opzioni al pacchetto babel. La prima indicata (a differenza del solito) sar‡ quella primaria.
+%% Se si utilizzano una o pi˘ lingue diverse da "italian" o "english", leggere le istruzioni in fondo.
+\def\babelopt{english}
+%% Valori ammessi per target: bach (tesi triennale), mst (tesi magistrale), phd (tesi di dottorato).
+\documentclass[target=mst,babel=\babelopt]{thud}[2014/01/17]
+
+%% --- Informazioni sulla tesi ---
+%% Per tutti i tipi di tesi
+\title{Retrospettiva antero-posteriore dei linguaggi funzionali imperativi}
+\author{Sara Fabro}
+\supervisor{Dott.\ Marino Miculan}
+%% Altri campi disponibili: \reviewer, \tutor, \chair, \date (anno accademico, calcolato in automatico).
+%% Con \supervisor, \cosupervisor, \reviewer e \tutor si possono indicare pi˘ nomi separati da \and.
+%% Per le sole tesi di dottorato
+\phdnumber{313}
+\cycle{XXVIII}
+\contacts{Via della Sintassi Astratta, 0/1\\65536 Gigatera --- Italia\\+39 0123 456789\\\texttt{http://www.example.com}\\\texttt{inbox@example.com}}
+\rights{Tutti i diritti riservati a me stesso e basta.}
+%% Campi obbligatori: \title e \author.
+
+%% --- Pacchetti consigliati ---
+%% hyperref: Regola le impostazioni della creazione del PDF... pi˘ tante altre cose.
+%% tocbibind: Inserisce nell'indice anche la lista delle figure, la bibliografia, ecc.
+
+%% --- Stili di pagina disponibili (comando \pagestyle) ---
+%% sfbig (predefinito): Apertura delle parti e dei capitoli col numero grande; titoli delle parti e dei capitoli e intestazioni di pagina in sans serif.
+%% big: Come "sfbig", solo serif.
+%% plain: Apertura delle parti e dei capitoli tradizionali di LaTeX; intestazioni di pagina come "big".
+
+\begin{document}
+
+\message{ !name(thud.tex) !offset(-3) }
+
+
+
+%% Il frontespizio prima di tutto!
+
+\message{ !name(thud.tex) !offset(166) }
+
+\end{document}
+
+--- Istruzioni per l'aggiunta di nuove lingue ---
+Per ogni nuova lingua utilizzata aggiungere nel preambolo il seguente spezzone:
+    \addto\captionsitalian{%
+        \def\abstractname{Sommario}%
+        \def\acknowledgementsname{Ringraziamenti}%
+        \def\authorcontactsname{Contatti dell'autore}%
+        \def\candidatename{Candidato}%
+        \def\chairname{Direttore}%
+        \def\conclusionsname{Conclusioni}%
+        \def\cosupervisorname{Co-relatore}%
+        \def\cosupervisorsname{Co-relatori}%
+        \def\cyclename{Ciclo}%
+        \def\datename{Anno accademico}%
+        \def\indexname{Indice analitico}%
+        \def\institutecontactsname{Contatti dell'Istituto}%
+        \def\introductionname{Introduzione}%
+        \def\prefacename{Prefazione}%
+        \def\reviewername{Controrelatore}%
+        \def\reviewersname{Controrelatori}%
+        %% Anno accademico
+        \def\shortdatename{A.A.}%
+        \def\summaryname{Riassunto}%
+        \def\supervisorname{Relatore}%
+        \def\supervisorsname{Relatori}%
+        \def\thesisname{Tesi di \expandafter\ifcase\csname thud@target\endcsname Laurea\or Laurea Magistrale\or Dottorato\fi}%
+        \def\tutorname{Tutor aziendale%
+        \def\tutorsname{Tutor aziendali}%
+    }
+sostituendo a "italian" (nella 1a riga) il nome della lingua e traducendo le varie voci.

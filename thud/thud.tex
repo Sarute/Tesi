@@ -1,0 +1,477 @@
+
+%% Le lingue utilizzate, che verranno passate come opzioni al pacchetto babel. La prima indicata (a differenza del solito) sar‡ quella primaria.
+%% Se si utilizzano una o pi˘ lingue diverse da "italian" o "english", leggere le istruzioni in fondo.
+\def\babelopt{english}
+%% Valori ammessi per target: bach (tesi triennale), mst (tesi magistrale), phd (tesi di dottorato).
+\documentclass[target=mst,babel=\babelopt]{thud}[2014/01/17]
+
+%% --- Informazioni sulla tesi ---
+%% Per tutti i tipi di tesi
+\title{Retrospettiva antero-posteriore dei linguaggi funzionali imperativi}
+\author{Sara Fabro}
+\supervisor{Dott.\ Marino Miculan}
+%% Altri campi disponibili: \reviewer, \tutor, \chair, \date (anno accademico, calcolato in automatico).
+%% Con \supervisor, \cosupervisor, \reviewer e \tutor si possono indicare pi˘ nomi separati da \and.
+%% Per le sole tesi di dottorato
+\phdnumber{313}
+\cycle{XXVIII}
+\contacts{Via della Sintassi Astratta, 0/1\\65536 Gigatera --- Italia\\+39 0123 456789\\\texttt{http://www.example.com}\\\texttt{inbox@example.com}}
+\rights{Tutti i diritti riservati a me stesso e basta.}
+
+\usepackage{hyperref}
+\usepackage{url}
+%% Campi obbligatori: \title e \author.
+
+%% --- Pacchetti consigliati ---
+%% hyperref: Regola le impostazioni della creazione del PDF... pi˘ tante altre cose.
+%% tocbibind: Inserisce nell'indice anche la lista delle figure, la bibliografia, ecc.
+
+%% --- Stili di pagina disponibili (comando \pagestyle) ---
+%% sfbig (predefinito): Apertura delle parti e dei capitoli col numero grande; titoli delle parti e dei capitoli e intestazioni di pagina in sans serif.
+%% big: Come "sfbig", solo serif.
+%% plain: Apertura delle parti e dei capitoli tradizionali di LaTeX; intestazioni di pagina come "big".
+
+\begin{document}
+
+
+%% Il frontespizio prima di tutto!
+\maketitle
+
+%% Dedica (opzionale)
+\begin{dedication}Al mio cane,\par per avermi ascoltato mentre
+  ripassavo le lezioni.\end{dedication}
+
+%% Ringraziamenti (opzionali)
+\acknowledgements 
+
+%% Sommario (opzionale)
+\abstract
+
+%% Indice
+\tableofcontents
+
+%% Lista delle tabelle (se presenti)
+% \listoftables
+
+%% Lista delle figure (se presenti)
+% \listoffigures
+
+%% Corpo principale del documento
+\mainmatter
+
+%% Parte La suddivisione in parti Ë opzionale; talvolta sono
+%% sufficienti i capitoli.
+\part{Parte}
+
+%% Capitolo
+\chapter{Introduction}
+Developing reliable software is becoming increasingly
+difficult. Software's insecurity is the result of the complexity of the modern software system, the number of
+people involved in developing, the lack of time due to the market
+request, and others factors. Computer Science and Software Engineering
+are working at different layers with the aim to improve software's
+reliability: from managing software projects and
+structuring programming teams to programming languages and patterns to
+matheamtical techniques for specifying and certifying software properties.
+
+
+%% Sezione
+\section{Certified Software}
+
+Even if we don't think about it, software is involved in each aspect
+of our lives. Communication and computing devices, consumer products (such as cameras,
+refrigerators, thermostats), aviation systems, medical devices; all of them are controlled by software. 
+
+Despite this, software is still developed without a precise
+specification. The outcome of heedful software engineering phase is
+not always taken in consideration by developers, which often start to
+write code with an unclear or informal specification. As a result, a developer may
+deliver a program that will not fulfill the specification.
+Wide testing and debugging may contract the gap between the program
+delivered and the original program project, but there is no assurance
+that the program will satisfy the entire specification. Such inaccuracy may
+not always be relevant, but when joining different modules together,
+these approximations may lead to a system that nobody can manage or,
+even worse, understand. It is diffusely accepted that bugs in software
+are a grave problem today, since they increase the cost of software
+development and decrease the security of the system.
+
+A developer that write code without a formal specification, can be compared to the
+mathematician describe by Bourbak, in his book: \cite{Bourbaki98}
+\begin{quote}
+"his experience and mathematical flair tell him that translation into formal language would be no 
+more than an exercise of patience (though doubtless a very tedious one)''
+\end{quote}
+Without a formal specification, one can occur in mistakes due to a
+wrong line of reasoning, like an inappropriate use of deduction or an
+inappropriate analogy between two different cases. The research
+community has developed a large number of techniques for finding bugs
+in programs or even proving programs to be free of certain classes of
+bug. The drawback of these approaches is that they are used after the
+programming task, while the idea is to apply formal methods throughout
+the software lifecycle.
+
+Certified software consists of an executable program C plus a formal
+proof P that the software is free of bugs, with respect to a particular
+dependability claim S. \cite{Shao10}. The outcome
+software will certify the behavior described by the claim, which
+can range from making almost no guarantee to simple type safety property, or all
+the way to deep security and correctness properties. Because the claim
+comes with a mechanized proof, the dependability can be checked
+independently and automatically in an extremely reliable way.
+
+The conventional wisdom is that Certified Software will never be
+practiced because of two reasons: first, any real software must also rely on the underlying runtime system
+which is too low-level and complex to be verifiable; then, as a second
+reason, a significant part of developers asserts that the cost of a
+formal verification is too high compared with his benefits.
+In the 21st century, however, the progress and the interests in practical application of
+interactive theorem proving increased significantly. In the realm of
+pure mathematics, Georges Gonthier built a machine-checked proof of 
+the four-color theorem \cite{Gonthier08}. His achievement is the result of six years of
+work, 170.000 lines of code, 15.000 definitions and 4.300 theorems. 
+In the realm of proving verification, Xavier Leroy developed the
+CompCert, a verified C compiler back-end\cite{Compcert}.
+Both these two projects and many others \cite{JSCert} are developed and
+checked using the Coq Proof Assistant.
+
+
+Coq is a general purpose environment for developing mathematical
+proofs and not a dedicated software verification tool.
+However, it is based on a powerful language including basic functional
+programming and high-level specifications.
+As such it offers modern ways to literally program proofs in a
+structured way with advanced data-types, proofs by computation, and general purpose libraries of definitions and lemmas.
+Coq is well suited for software verification of programs involving
+advanced specifications (language semantics, real numbers). 
+\cite{paulinintroduction}
+
+
+\section{Limits of Coq Extraction}
+As mentioned before Coq isn't a dedicated software verification tool,
+but it offers an extraction modul for automatic generation of
+programs out of Coq proofs and functions. The extraction process
+ is based on the Curry-Howard isomorphism, which asserts that a constructive proof is isomorphic to
+a functional program.  The main motivation for this feature is to produce certified software: each
+property proved in Coq will still be valid after extraction. Certified
+code obtained this way can be easily integrated in larger
+developments, so that wider communities of programmers can benefit from extraction.
+The languages supported by the module are three:
+OCaml, Haskell and Scheme.
+
+
+Extraction isn't a new
+and revolutionary idea since it exists in Coq since 1989 and it is
+present in other theorem provers, like Nuprl\cite{Nuprl}. Unfortunately,
+the extraction process has still one significant limit: it's all
+about pure functional languages. 
+Non-functional programming languages hardly feature a type
+theory supporting a Curry-Howard isomorphism, and even if such a
+theory were available, implementing a proof-assistant with its own
+extraction facilities wouldn't be a valid solution.
+Non-functional programming languages such as C or Java do include
+computational effects, for example a Java function may throw an
+exception or modify a state during a computation.
+
+ What should a developer do in order to have certified software, with
+ side effects, extracted directly from a Proof Assistant?
+
+\section{Thesis proposal}
+The thesis aims to extract certified Haskell code with side-effects
+from the Coq Proof Assistant. In order to achieve this goal, it is 
+needed to formalize non-functional aspects. A solution to this problem
+is represented by the use of monads.
+In Computer Science, a monad describes a "notion of computation''
+\cite{Moggi91}. It
+is a map that sends every type X of some given programming language to
+a new Type T(X), that is the type of T-computations with values in X. 
+The proposal is to extend the Coq proof assistant with a
+suitable computation monad, that will cover the specific
+non-functional computational aspect. This solution is inspired by
+others pure functional languages, such as Haskell.
+
+METHODOLOGY
+
+\section{Other solutions to the problem}
+Formal verification of side effect aspects is a hot topic in the
+Computer Science community. There are several teams and projects that
+are working on it, with different point of view and approach.
+Cybele\cite{Cybele} is a tool to write proofs by reflection in Coq;
+it is mainly developed at the Inria and the Université Paris Diderot-Paris 7.
+Code is written in the Coq Proof Assistant extended with effects and
+termination aspects,s then procedures are extracted to OCaml. They
+present an innovative technique for proof-by-reflection. The key
+concept is the use of simulable monads, where a monad
+is simulable if, for all terminating reduction sequences in its equivalent
+effectual computational model, there exists a witness from which the same
+reduction may be simulated a posteriori by the
+monad.\cite{claret:hal-00870110}
+Another project is the one conducted by Jean-Guillaume Dumas, 
+Dominique Duval, Burak Ekici, Damien Pous. They work on Formal
+verification in Coq of program properties involving the global state
+effect. \cite{Dumas:2014:coqstates} Their Coq framework allows to
+verify properties about the manipulation of the global state
+effect. The state doesn't appear clearly with its type of expressions
+which manipulate it, but it's a combination of decorations added to terms and
+equations. As a first result they give the proof of commutation
+update-update,  but their main goal is to generalize to the other
+side effects in order to reach the verification of real-life C code with effects.
+The point of view changes with the approach adopted by Gabe
+Dijkstra.\cite{Dijkstra12} His idea is to automate the process of
+translating Haskell code into the Coq Proof Assistant, in such way
+that the extracted Haskell code from Coq will have the same interface
+and semantics.  
+
+
+\chapter{Haskell}
+
+Having a list of statements, a list of programming languages and
+ranking those languages in order of how well the statements apply to
+them, pointed out Haskell as the number one for both the following
+statements:
+"Learning this language significantly changed how I use other languages''
+\cite{interview1}
+"I would recommend most programmers learn this language, regardless of
+whether they have a specific need for it."
+\cite{interview2}
+This result isn't an unexpected surprise, since Haskell it's quite
+different from most other programming languages. 
+
+This chapter will give an overview of Haskell,
+since it is the target language of the methodology
+presented in this thesis. Particular attention will be given to monads
+and how they are embedded in the programming language.
+
+
+\section{What is Haskell?}
+Haskell is a static, lazy, pure functional language,
+ based on the lambda calculus (hence the lambda in the
+logo), and designed over a period of three years by a group of
+Computer Scientists from the functional programming community.
+It is named after Haskell Brook Curry, an American mathematician and
+logician. The design effort came about because of the perceived need
+for a new common functional language with these constraints:
+\begin{enumerate}
+  \item It should be suitable for teaching, research, and
+    applications, including building large systems.
+    \item It should be completely described via the publication of a
+      formal syntax and semantics.
+      \item It should be freely available. Anyone should be permitted
+        to implement the language and distribute it to whomever they
+        please.
+        \item It should be based on ideas that enjoy a wide consensus.
+          \item It should reduce unnecessary diversity in functional programming languages.
+\end{enumerate} \cite{haskell98}
+
+
+Haskell is lazy, it won't execute or
+calculate a function until it's forced to determine a
+result. This characteristic is suitable with referential transparency,
+which guarantees that a function with the same parameters always evaluates the same result
+in any context. The two features combined together allows to think of
+Haskell's programs as a series of transformations on data.
+
+
+Java, C, Pascal, and many others are all imperative languages. They
+consists of a sequence of commands, executed with a precise
+and not mutable order. Haskell supports functional programming
+instead. The main program itself is written as a function which receives the
+program’s input as its argument and delivers the program’s output as its result.
+Typically the main function is deﬁned in terms of other functions, which in
+turn are deﬁned in terms of still more functions, until at the bottom level the
+functions are language primitives.\cite{hughes:matters-cj} Haskell
+isn't simply one of many functional programming languages, it's a pure
+functional programming language: it does not allow any side-effect.
+
+Haskell is a pure language; the evaluation of a
+program is equivalent to evaluating a function in the pure
+mathematical sense. Purity leads up pervasive consequences, since side
+effects are undoubtedly very useful. The lack of side effects was
+heavily perceived at the beginning, Haskell I/O was a complete and
+utter confusion. Necessity being the mother of invention, this
+shortcoming led to the invention of monadic I/O, considered one of the
+Haskell's main contribution to the programming world.
+
+Haskell is statically typed, its programs are compiled before run.
+Its compiler will catch contingent errors at compile time, 
+rather than finding them during the production stage. 
+Additionally, Haskell has a good type system with type inference.
+As a consequence, there is no need to declare each argument's type of
+functions, since the type system can intelligently figure it out from
+its own. Type inference also allows your code to be more general. 
+If a function takes two parameters and adds them together and 
+it isn't explicitly stated their type, the function will work on any two parameters that act like numbers.
+
+
+
+\section{What can Haskell offer to the programmer?}
+
+\subsection{Purity}
+As mentioned before, unlike some other functional programming
+languages, Haskell is pure. The result of a function is determined by
+its input, and only by its input; no side effects are
+expected. Haskell developers think
+about what the program is to compute not how or when it's computed,
+interesting even more when programming parallelize threads.
+On the contrary, the close relationship between imperative
+languages and the execution from the processor of sequencing commands
+implies that imperative languages can never rise above the task of
+sequencing.
+Purity it's also important because it prevents mistakes due to side
+effects and combined with polymorphism, it encourage a style of code
+that is modular, refactorable and testable.
+
+
+\subsection{Modularity}
+Modularity is a key concept to successful programming. When trying to
+write a program, one first splits the problem into sub-problems, then
+solves the bottom problem and tries to combine the solutions
+together. The ways in which one can divide the original problem is
+heavily influenced by the ways in which he can "glue'' solutions
+together.
+A well-know analogy is the construction of a wooden chair. If the part
+are made separately and then glued together, the task is solved in a
+easy way. But if the chair has to be carved out of a solid piece of
+wood, it would become obviously harder. John Hughes used this
+comparison in his paper:
+
+\begin{quote}
+"Languages which aim to improve productivity must support modular
+programming well. But new scope rules and mechanisms for separate
+compilation are not enough - modularity means more than modules.
+ Our ability to decompose a problem into parts depends directly on our
+ ability to glue solutions together.
+ To assist modular programming, a language must provide good glue.
+
+Functional programming languages provide two new kinds of glue -
+higher-order functions and lazy evaluation."
+\cite{hughes:matters-cj}
+\end{quote}
+
+\subsection{Elegant code}
+Haskell is often described as a "beautiful'', "elegant" or even "cool"
+language, a description that is hardly associated  with the committee
+designs for a new language. Despite that, there are some factors that
+have contributed to give Haskell this reputation.
+First of all Haskell was needed at that precise time and the goals
+among the committees were aligned. To understand the favourable
+situation in which it began to be developed, it's sufficient to cite
+some sentences of the Turing Award lecture delivered by John Backus in
+1978:
+
+\begin{quote}
+"Can Programming Be Liberated from the von 
+Neumann Style? A Functional Style and Its 
+Algebra of Programs
+
+
+... An alternative functional style of programming is 
+founded on the use of combining forms for creating 
+programs. Functional programs deal with structured 
+data, are often nonrepetitive and nonrecursive, are hierarchically constructed, do not name their arguments, and 
+do not require the complex machinery of procedure 
+declarations to become generally applicable. Combining 
+forms can use high level programs to build still higher 
+level ones in a style not possible in conventional languages.
+
+...Associated with the functional style of programming 
+is an algebra of programs whose variables range over 
+programs and whose operations are combining forms. 
+This algebra can be used to transform programs and to 
+solve equations whose "unknowns" are programs in much 
+the same way one transforms equations in high school 
+algebra. These transformations are given by algebraic 
+laws and are carried out in the same language in which 
+programs are written. Combining forms are chosen not 
+only for their programming power but also for the power 
+of their associated algebraic laws. General theorems of 
+the algebra give the detailed behavior and termination 
+conditions for large classes of programs." \cite{Backus:1978:CPL}
+
+\end{quote}
+
+One of the committee's priorities was the mathematical notation: clear, intuitive
+and elegant; to the detriment of a formally defined semantics. Many
+debates were stress by cries of "Does it have a compositional
+semantics?'' or "What does the domain look like?''.
+But in the end the absence of a formal language definition allows the
+language to evolve easily, because the costs of
+producing fully formal specifications of any proposed change are
+heavy, and by themselves discourage changes.
+
+\subsection{Monads}
+As stated before, the benefits of pure functions are that they are
+well-behaved (given a particular input, they will always compute the
+exact same output), easy to test, completely predictable, and less to
+prone to bugs. But programming with only pure functions is
+limiting, indeed without side effects writing a simple program that
+copy a file form one directory to another will be an impossible task.
+
+%% Fine dei capitoli normali, inizio dei capitoli-appendice
+%% (opzionali)
+\appendix
+
+\part{Appendici}
+
+
+
+%% Parte conclusiva del documento; tipicamente per riassunto,
+%% bibliografia e/o indice analitico.
+\backmatter
+
+%% Riassunto (opzionale)
+\summary Maecenas tempor elit sed arcu commodo, dapibus sagittis leo
+egestas. Praesent at ultrices urna. Integer et nibh in augue mollis
+facilisis sit amet eget magna. Fusce at porttitor sapien. Phasellus
+imperdiet, felis et molestie vulputate, mauris sapien tincidunt justo,
+in lacinia velit nisi nec ipsum. Duis elementum pharetra lorem, ut
+pellentesque nulla congue et. Sed eu venenatis tellus, pharetra cursus
+felis. Sed et luctus nunc. Aenean commodo, neque a aliquam bibendum,
+mauris augue fringilla justo, et scelerisque odio mi sit amet
+diam. Nulla at placerat nibh, nec rutrum urna. Donec ut egestas
+magna. Aliquam erat volutpat. Phasellus vestibulum justo sed purus
+mattis, vitae lacinia magna viverra. Nulla rutrum diam dui, vel semper
+mi mattis ac. Vestibulum ante ipsum primis in faucibus orci luctus et
+ultrices posuere cubilia Curae; Donec id vestibulum lectus, eget
+tristique est.
+
+%% Bibliografia (opzionale)
+\bibliographystyle{plain_\languagename}%% Carica l'omonimo file .bst, dove \languagename Ë la lingua attiva.
+%% Nel caso in cui si usi un file .bib (consigliato)
+\bibliography{thud}
+%% Nel caso di bibliografia manuale, usare l'environment
+%% thebibliography.
+
+%% Per l'indice analitico, usare il pacchetto makeidx (o analogo).
+
+\end{document}
+
+--- Istruzioni per l'aggiunta di nuove lingue ---
+Per ogni nuova lingua utilizzata aggiungere nel preambolo il seguente spezzone:
+    \addto\captionsitalian{%
+        \def\abstractname{Sommario}%
+        \def\acknowledgementsname{Ringraziamenti}%
+        \def\authorcontactsname{Contatti dell'autore}%
+        \def\candidatename{Candidato}%
+        \def\chairname{Direttore}%
+        \def\conclusionsname{Conclusioni}%
+        \def\cosupervisorname{Co-relatore}%
+        \def\cosupervisorsname{Co-relatori}%
+        \def\cyclename{Ciclo}%
+        \def\datename{Anno accademico}%
+        \def\indexname{Indice analitico}%
+        \def\institutecontactsname{Contatti dell'Istituto}%
+        \def\introductionname{Introduzione}%
+        \def\prefacename{Prefazione}%
+        \def\reviewername{Controrelatore}%
+        \def\reviewersname{Controrelatori}%
+        %% Anno accademico
+        \def\shortdatename{A.A.}%
+        \def\summaryname{Riassunto}%
+        \def\supervisorname{Relatore}%
+        \def\supervisorsname{Relatori}%
+        \def\thesisname{Tesi di \expandafter\ifcase\csname thud@target\endcsname Laurea\or Laurea Magistrale\or Dottorato\fi}%
+        \def\tutorname{Tutor aziendale%
+        \def\tutorsname{Tutor aziendali}%
+    }
+sostituendo a "italian" (nella 1a riga) il nome della lingua e traducendo le varie voci.

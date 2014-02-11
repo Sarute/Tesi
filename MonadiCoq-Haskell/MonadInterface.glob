@@ -1,0 +1,67 @@
+DIGEST ddd009f30f9fbfa5511dbda81a5b87ed
+FMonadInterface
+modtype 12:16 <> MONAD
+ax 54:54 MONAD M
+ax 92:94 MONAD ret
+R121:121 MonadInterface MONAD M defax
+R123:123 MonadInterface <> A var
+R115:115 MonadInterface <> A var
+ax 137:140 MONAD bind
+R186:186 MonadInterface MONAD M defax
+R188:188 MonadInterface <> B var
+R178:178 MonadInterface MONAD M defax
+R180:180 MonadInterface <> B var
+R173:173 MonadInterface <> A var
+R165:165 MonadInterface MONAD M defax
+R167:167 MonadInterface <> A var
+R207:210 MonadInterface MONAD bind defax
+not 198 MONAD :monad_scope:x_'>>='_x
+ax 291:302 MONAD left_neutral
+R332:332 MonadInterface MONAD M defax
+R334:334 MonadInterface <> B var
+R327:327 MonadInterface <> A var
+R341:341 MonadInterface <> A var
+R360:362 Coq.Init.Logic <> :type_scope:x_'='_x not
+R347:347 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R353:358 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R348:350 MonadInterface MONAD ret defax
+R352:352 MonadInterface <> a var
+R359:359 MonadInterface <> f var
+R363:363 MonadInterface <> f var
+R365:365 MonadInterface <> a var
+ax 375:387 MONAD right_neutral
+R414:414 MonadInterface MONAD M defax
+R416:416 MonadInterface <> A var
+R449:451 Coq.Init.Logic <> :type_scope:x_'='_x not
+R422:428 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R447:448 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R421:421 MonadInterface <> m var
+R437:437 MonadInterface <> A var
+R442:444 MonadInterface MONAD ret defax
+R446:446 MonadInterface <> a var
+R452:452 MonadInterface <> m var
+ax 462:474 MONAD associativity
+R505:505 MonadInterface MONAD M defax
+R507:507 MonadInterface <> A var
+R519:519 MonadInterface MONAD M defax
+R521:521 MonadInterface <> B var
+R514:514 MonadInterface <> A var
+R533:533 MonadInterface MONAD M defax
+R535:535 MonadInterface <> C var
+R528:528 MonadInterface <> B var
+R570:572 Coq.Init.Logic <> :type_scope:x_'='_x not
+R541:546 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R569:569 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R540:540 MonadInterface <> m var
+R555:555 MonadInterface <> A var
+R563:567 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R560:560 MonadInterface <> k var
+R562:562 MonadInterface <> x var
+R568:568 MonadInterface <> h var
+R573:573 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R581:586 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R575:579 MonadInterface MONAD :monad_scope:x_'>>='_x not
+R574:574 MonadInterface <> m var
+R580:580 MonadInterface <> k var
+R587:587 MonadInterface <> h var
+R595:599 MonadInterface <> <> modtype

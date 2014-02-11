@@ -1,0 +1,162 @@
+DIGEST db5b8fc4bff012d509672bf4ea72fa0f
+FStateMonadFile
+R82:95 MonadInterface <> <> lib
+modtype 112:120 <> StateType
+ax 134:135 StateType st
+R148:156 StateMonadFile <> <> modtype
+R184:192 StateMonadFile <> <> mod
+R198:202 MonadInterface <> <> mod
+mod 168:177 <> StateMonad
+def 254:259 StateMonad State'
+R290:292 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R289:289 StateMonadFile <> a var
+R293:294 StateMonadFile St st defax
+R282:283 StateMonadFile St st defax
+def 310:310 StateMonad M
+R315:320 StateMonadFile StateMonad State' def
+def 335:337 StateMonad ret
+R358:358 StateMonadFile StateMonad M def
+R360:360 StateMonadFile <> A var
+R353:353 StateMonadFile <> A var
+R377:377 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R379:380 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R383:383 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R378:378 StateMonadFile <> x var
+R381:382 StateMonadFile <> st var
+def 397:400 StateMonad bind
+R421:421 StateMonadFile StateMonad M def
+R423:423 StateMonadFile <> A var
+R437:437 StateMonadFile StateMonad M def
+R439:439 StateMonadFile <> B var
+R432:432 StateMonadFile <> A var
+R444:444 StateMonadFile StateMonad M def
+R446:446 StateMonadFile <> B var
+R478:479 StateMonadFile <> c1 var
+R481:482 StateMonadFile <> st var
+R487:488 StateMonadFile <> c2 var
+R492:494 StateMonadFile <> st' var
+R490:490 StateMonadFile <> x var
+R516:519 StateMonadFile StateMonad bind def
+not 507 StateMonad :monad_scope:x_'>>='_x
+prf 601:607 StateMonad equal_f
+R643:643 StateMonadFile <> B var
+R638:638 StateMonadFile <> A var
+R670:672 Coq.Init.Logic <> :type_scope:x_'='_x not
+R667:667 StateMonadFile <> f var
+R669:669 StateMonadFile <> x var
+R673:673 StateMonadFile <> g var
+R675:675 StateMonadFile <> x var
+R649:651 Coq.Init.Logic <> :type_scope:x_'='_x not
+R648:648 StateMonadFile <> f var
+R652:652 StateMonadFile <> g var
+ax 729:757 StateMonad functional_extensionality_dep
+R777:777 StateMonadFile <> A var
+R816:816 StateMonadFile <> A var
+R819:819 StateMonadFile <> B var
+R821:821 StateMonadFile <> x var
+R853:855 Coq.Init.Logic <> :type_scope:x_'='_x not
+R852:852 StateMonadFile <> f var
+R856:856 StateMonadFile <> g var
+R841:843 Coq.Init.Logic <> :type_scope:x_'='_x not
+R838:838 StateMonadFile <> f var
+R840:840 StateMonadFile <> x var
+R844:844 StateMonadFile <> g var
+R846:846 StateMonadFile <> x var
+prf 866:890 StateMonad functional_extensionality
+R910:910 StateMonadFile <> B var
+R905:905 StateMonadFile <> A var
+R943:945 Coq.Init.Logic <> :type_scope:x_'='_x not
+R942:942 StateMonadFile <> f var
+R946:946 StateMonadFile <> g var
+R931:933 Coq.Init.Logic <> :type_scope:x_'='_x not
+R928:928 StateMonadFile <> f var
+R930:930 StateMonadFile <> x var
+R934:934 StateMonadFile <> g var
+R936:936 StateMonadFile <> x var
+R972:1000 StateMonadFile StateMonad functional_extensionality_dep prfax
+R972:1000 StateMonadFile StateMonad functional_extensionality_dep prfax
+R1093:1096 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1093:1096 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1168:1196 StateMonadFile StateMonad functional_extensionality_dep prfax
+R1117:1141 StateMonadFile StateMonad functional_extensionality thm
+prf 1232:1243 StateMonad left_neutral
+R1277:1277 StateMonadFile StateMonad M def
+R1279:1279 StateMonadFile <> B var
+R1272:1272 StateMonadFile <> A var
+R1287:1287 StateMonadFile <> A var
+R1308:1310 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1295:1295 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1301:1306 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1296:1298 StateMonadFile StateMonad ret def
+R1300:1300 StateMonadFile <> a var
+R1307:1307 StateMonadFile <> f var
+R1311:1311 StateMonadFile <> f var
+R1313:1313 StateMonadFile <> a var
+R1346:1348 StateMonadFile StateMonad ret def
+R1361:1364 StateMonadFile StateMonad bind def
+prf 1405:1417 StateMonad right_neutral
+R1444:1444 StateMonadFile StateMonad M def
+R1446:1446 StateMonadFile <> A var
+R1481:1483 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1456:1461 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1480:1480 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1455:1455 StateMonadFile <> m var
+R1470:1470 StateMonadFile <> A var
+R1475:1477 StateMonadFile StateMonad ret def
+R1479:1479 StateMonadFile <> a var
+R1484:1484 StateMonadFile <> m var
+R1511:1514 StateMonadFile StateMonad bind def
+R1524:1526 StateMonadFile StateMonad ret def
+prf 1595:1607 StateMonad associativity
+R1638:1638 StateMonadFile StateMonad M def
+R1640:1640 StateMonadFile <> A var
+R1653:1653 StateMonadFile StateMonad M def
+R1655:1655 StateMonadFile <> B var
+R1648:1648 StateMonadFile <> A var
+R1667:1667 StateMonadFile StateMonad M def
+R1669:1669 StateMonadFile <> C var
+R1662:1662 StateMonadFile <> B var
+R1706:1708 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1677:1682 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1705:1705 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1676:1676 StateMonadFile <> m var
+R1691:1691 StateMonadFile <> A var
+R1699:1703 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1696:1696 StateMonadFile <> k var
+R1698:1698 StateMonadFile <> x var
+R1704:1704 StateMonadFile <> h var
+R1709:1709 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1717:1722 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1711:1715 StateMonadFile StateMonad :monad_scope:x_'>>='_x not
+R1710:1710 StateMonadFile <> m var
+R1716:1716 StateMonadFile <> k var
+R1723:1723 StateMonadFile <> h var
+R1758:1761 StateMonadFile StateMonad bind def
+R1764:1766 StateMonadFile StateMonad ret def
+R1844:1846 StateMonadFile StateMonad ret def
+R1855:1855 StateMonadFile StateMonad M def
+R1857:1860 Coq.Init.Datatypes <> unit ind
+def 1900:1903 StateMonad putM
+R1910:1911 StateMonadFile St st defax
+R1916:1916 StateMonadFile StateMonad M def
+R1918:1921 Coq.Init.Datatypes <> unit ind
+R1954:1956 StateMonadFile StateMonad ret def
+R1961:1961 StateMonadFile <> m var
+R1958:1959 Coq.Init.Datatypes <> tt constr
+def 1976:1978 StateMonad get
+R1982:1982 StateMonadFile StateMonad M def
+R1984:1985 StateMonadFile St st defax
+R2001:2003 StateMonadFile StateMonad ret def
+R2007:2007 StateMonadFile <> m var
+R2005:2005 StateMonadFile <> m var
+def 2023:2026 StateMonad getM
+R2047:2047 StateMonadFile <> A var
+R2041:2042 StateMonadFile St st defax
+R2052:2052 StateMonadFile StateMonad M def
+R2054:2054 StateMonadFile <> A var
+R2060:2063 StateMonadFile StateMonad bind def
+R2079:2081 StateMonadFile StateMonad ret def
+R2084:2084 StateMonadFile <> f var
+R2086:2086 StateMonadFile <> m var
+R2065:2067 StateMonadFile StateMonad get def
+R2098:2107 StateMonadFile <> <> mod

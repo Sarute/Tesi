@@ -1,0 +1,761 @@
+
+==================== Tidy Core ====================
+Result size of Tidy Core = {terms: 231, types: 349, coercions: 149}
+
+EstrazioneHaskellTesi.emptyStore :: forall a_arM. [a_arM]
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)}]
+EstrazioneHaskellTesi.emptyStore = GHC.Types.[]
+
+EstrazioneHaskellTesi.ret
+  :: forall a1_agy. a1_agy -> EstrazioneHaskellTesi.M a1_agy
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType LLm,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)
+         Tmpl= (\ (@ a1_z) ->
+                  GHC.Tuple.(,) @ a1_z @ [(GHC.Base.String, GHC.Types.Int)])
+               `cast` (forall a1_z.
+                       <a1_z>
+                       -> (<[(GHC.Base.String, GHC.Types.Int)]>
+                           -> Sym
+                                <(Data.Functor.Identity.NTCo:Identity
+                                    <(a1_z, [(GHC.Base.String, GHC.Types.Int)])>)>) ; Sym
+                                                                                        <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                                                                                            <[(GHC.Base.String,
+                                                                                               GHC.Types.Int)]>
+                                                                                            <Data.Functor.Identity.Identity>
+                                                                                            <a1_z>)>
+                       :: (forall a1_z.
+                           a1_z
+                           -> [(GHC.Base.String, GHC.Types.Int)]
+                           -> (a1_z, [(GHC.Base.String, GHC.Types.Int)]))
+                            ~#
+                          (forall a1_z.
+                           a1_z
+                           -> Control.Monad.Trans.State.Lazy.StateT
+                                [(GHC.Base.String, GHC.Types.Int)]
+                                Data.Functor.Identity.Identity
+                                a1_z))}]
+EstrazioneHaskellTesi.ret =
+  (\ (@ a1_z) ->
+     GHC.Tuple.(,) @ a1_z @ [(GHC.Base.String, GHC.Types.Int)])
+  `cast` (forall a1_z.
+          <a1_z>
+          -> (<[(GHC.Base.String, GHC.Types.Int)]>
+              -> Sym
+                   <(Data.Functor.Identity.NTCo:Identity
+                       <(a1_z, [(GHC.Base.String, GHC.Types.Int)])>)>) ; Sym
+                                                                           <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                                                                               <[(GHC.Base.String,
+                                                                                  GHC.Types.Int)]>
+                                                                               <Data.Functor.Identity.Identity>
+                                                                               <a1_z>)>
+          :: (forall a1_z.
+              a1_z
+              -> [(GHC.Base.String, GHC.Types.Int)]
+              -> (a1_z, [(GHC.Base.String, GHC.Types.Int)]))
+               ~#
+             (forall a1_z.
+              a1_z
+              -> Control.Monad.Trans.State.Lazy.StateT
+                   [(GHC.Base.String, GHC.Types.Int)]
+                   Data.Functor.Identity.Identity
+                   a1_z))
+
+EstrazioneHaskellTesi.bind1
+  :: forall a1_v a2_w.
+     Control.Monad.Trans.State.Lazy.StateT
+       [(GHC.Base.String, GHC.Types.Int)]
+       Data.Functor.Identity.Identity
+       a1_v
+     -> (a1_v
+         -> Control.Monad.Trans.State.Lazy.StateT
+              [(GHC.Base.String, GHC.Types.Int)]
+              Data.Functor.Identity.Identity
+              a2_w)
+     -> [(GHC.Base.String, GHC.Types.Int)]
+     -> Data.Functor.Identity.Identity
+          (a2_w, [(GHC.Base.String, GHC.Types.Int)])
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LC(C(S))L,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=3, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [0 60 0] 52 0}]
+EstrazioneHaskellTesi.bind1 =
+  \ (@ a1_v)
+    (@ a2_w)
+    (m_XBK
+       :: Control.Monad.Trans.State.Lazy.StateT
+            [(GHC.Base.String, GHC.Types.Int)]
+            Data.Functor.Identity.Identity
+            a1_v)
+    (k_XBM
+       :: a1_v
+          -> Control.Monad.Trans.State.Lazy.StateT
+               [(GHC.Base.String, GHC.Types.Int)]
+               Data.Functor.Identity.Identity
+               a2_w)
+    (eta_XBO :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    let {
+      a_sBi [Dmd=Just D(SS)]
+        :: Data.Functor.Identity.Identity
+             (a1_v, [(GHC.Base.String, GHC.Types.Int)])
+      [LclId, Str=DmdType]
+      a_sBi =
+        (m_XBK
+         `cast` (<Control.Monad.Trans.State.Lazy.NTCo:StateT
+                    <[(GHC.Base.String, GHC.Types.Int)]>
+                    <Data.Functor.Identity.Identity>
+                    <a1_v>>
+                 :: Control.Monad.Trans.State.Lazy.StateT
+                      [(GHC.Base.String, GHC.Types.Int)]
+                      Data.Functor.Identity.Identity
+                      a1_v
+                      ~#
+                    ([(GHC.Base.String, GHC.Types.Int)]
+                     -> Data.Functor.Identity.Identity
+                          (a1_v, [(GHC.Base.String, GHC.Types.Int)]))))
+          eta_XBO } in
+    ((k_XBM
+        (case a_sBi
+              `cast` (<Data.Functor.Identity.NTCo:Identity
+                         <(a1_v, [(GHC.Base.String, GHC.Types.Int)])>>
+                      :: Data.Functor.Identity.Identity
+                           (a1_v, [(GHC.Base.String, GHC.Types.Int)])
+                           ~#
+                         (a1_v, [(GHC.Base.String, GHC.Types.Int)]))
+         of _ { (a5_aB1, _) ->
+         a5_aB1
+         }))
+     `cast` (<Control.Monad.Trans.State.Lazy.NTCo:StateT
+                <[(GHC.Base.String, GHC.Types.Int)]>
+                <Data.Functor.Identity.Identity>
+                <a2_w>>
+             :: Control.Monad.Trans.State.Lazy.StateT
+                  [(GHC.Base.String, GHC.Types.Int)]
+                  Data.Functor.Identity.Identity
+                  a2_w
+                  ~#
+                ([(GHC.Base.String, GHC.Types.Int)]
+                 -> Data.Functor.Identity.Identity
+                      (a2_w, [(GHC.Base.String, GHC.Types.Int)]))))
+      (case a_sBi
+            `cast` (<Data.Functor.Identity.NTCo:Identity
+                       <(a1_v, [(GHC.Base.String, GHC.Types.Int)])>>
+                    :: Data.Functor.Identity.Identity
+                         (a1_v, [(GHC.Base.String, GHC.Types.Int)])
+                         ~#
+                       (a1_v, [(GHC.Base.String, GHC.Types.Int)]))
+       of _ { (_, s'_aB7) ->
+       s'_aB7
+       })
+
+EstrazioneHaskellTesi.bind
+  :: forall a1_agw a2_agx.
+     EstrazioneHaskellTesi.M a1_agw
+     -> (a1_agw -> EstrazioneHaskellTesi.M a2_agx)
+     -> EstrazioneHaskellTesi.M a2_agx
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LC(C(S))L,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)}]
+EstrazioneHaskellTesi.bind =
+  EstrazioneHaskellTesi.bind1
+  `cast` (forall a1_v a2_w.
+          <Control.Monad.Trans.State.Lazy.StateT
+             [(GHC.Base.String, GHC.Types.Int)]
+             Data.Functor.Identity.Identity
+             a1_v>
+          -> <a1_v
+              -> Control.Monad.Trans.State.Lazy.StateT
+                   [(GHC.Base.String, GHC.Types.Int)]
+                   Data.Functor.Identity.Identity
+                   a2_w>
+          -> Sym
+               <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                   <[(GHC.Base.String, GHC.Types.Int)]>
+                   <Data.Functor.Identity.Identity>
+                   <a2_w>)>
+          :: (forall a1_v a2_w.
+              Control.Monad.Trans.State.Lazy.StateT
+                [(GHC.Base.String, GHC.Types.Int)]
+                Data.Functor.Identity.Identity
+                a1_v
+              -> (a1_v
+                  -> Control.Monad.Trans.State.Lazy.StateT
+                       [(GHC.Base.String, GHC.Types.Int)]
+                       Data.Functor.Identity.Identity
+                       a2_w)
+              -> [(GHC.Base.String, GHC.Types.Int)]
+              -> Data.Functor.Identity.Identity
+                   (a2_w, [(GHC.Base.String, GHC.Types.Int)]))
+               ~#
+             (forall a1_v a2_w.
+              Control.Monad.Trans.State.Lazy.StateT
+                [(GHC.Base.String, GHC.Types.Int)]
+                Data.Functor.Identity.Identity
+                a1_v
+              -> (a1_v
+                  -> Control.Monad.Trans.State.Lazy.StateT
+                       [(GHC.Base.String, GHC.Types.Int)]
+                       Data.Functor.Identity.Identity
+                       a2_w)
+              -> Control.Monad.Trans.State.Lazy.StateT
+                   [(GHC.Base.String, GHC.Types.Int)]
+                   Data.Functor.Identity.Identity
+                   a2_w))
+
+Rec {
+EstrazioneHaskellTesi.lookUp_varLookUpList' [Occ=LoopBreaker]
+  :: GHC.Base.String
+     -> EstrazioneHaskellTesi.St
+     -> Data.Maybe.Maybe EstrazioneHaskellTesi.Val
+[GblId, Arity=2, Caf=NoCafRefs, Str=DmdType LS]
+EstrazioneHaskellTesi.lookUp_varLookUpList' =
+  \ (name_ah5 :: GHC.Base.String)
+    (ds_dx7 :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    case ds_dx7 of _ {
+      [] -> Data.Maybe.Nothing @ EstrazioneHaskellTesi.Val;
+      : ds1_dx8 xs_ah9 ->
+        case ds1_dx8 of _ { (n_ah7, v_ah8) ->
+        case GHC.Base.eqString name_ah5 n_ah7 of _ {
+          GHC.Types.False ->
+            EstrazioneHaskellTesi.lookUp_varLookUpList' name_ah5 xs_ah9;
+          GHC.Types.True -> Data.Maybe.Just @ EstrazioneHaskellTesi.Val v_ah8
+        }
+        }
+    }
+end Rec }
+
+EstrazioneHaskellTesi.lookUp2 :: GHC.Types.Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=False, Expandable=True,
+         Guidance=IF_ARGS [] 10 20}]
+EstrazioneHaskellTesi.lookUp2 = GHC.Types.I# 0
+
+EstrazioneHaskellTesi.lookUp1
+  :: EstrazioneHaskellTesi.Loc
+     -> [(GHC.Base.String, GHC.Types.Int)]
+     -> Data.Functor.Identity.Identity
+          (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType LSm,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Arity=2, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=False)
+         Tmpl= \ (loc_agz [Occ=Once] :: EstrazioneHaskellTesi.Loc)
+                 (eta_B1 :: [(GHC.Base.String, GHC.Types.Int)]) ->
+                 case EstrazioneHaskellTesi.lookUp_varLookUpList' loc_agz eta_B1
+                 of _ {
+                   Data.Maybe.Nothing ->
+                     (EstrazioneHaskellTesi.lookUp2, eta_B1)
+                     `cast` (Sym
+                               <(Data.Functor.Identity.NTCo:Identity
+                                   <(EstrazioneHaskellTesi.Val,
+                                     [(GHC.Base.String, GHC.Types.Int)])>)>
+                             :: (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])
+                                  ~#
+                                Data.Functor.Identity.Identity
+                                  (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)]));
+                   Data.Maybe.Just s_amE [Occ=Once] ->
+                     (s_amE, eta_B1)
+                     `cast` (Sym
+                               <(Data.Functor.Identity.NTCo:Identity
+                                   <(EstrazioneHaskellTesi.Val,
+                                     [(GHC.Base.String, GHC.Types.Int)])>)>
+                             :: (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])
+                                  ~#
+                                Data.Functor.Identity.Identity
+                                  (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)]))
+                 }}]
+EstrazioneHaskellTesi.lookUp1 =
+  \ (loc_agz :: EstrazioneHaskellTesi.Loc)
+    (eta_B1 :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    case EstrazioneHaskellTesi.lookUp_varLookUpList' loc_agz eta_B1
+    of _ {
+      Data.Maybe.Nothing ->
+        (EstrazioneHaskellTesi.lookUp2, eta_B1)
+        `cast` (Sym
+                  <(Data.Functor.Identity.NTCo:Identity
+                      <(EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])>)>
+                :: (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])
+                     ~#
+                   Data.Functor.Identity.Identity
+                     (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)]));
+      Data.Maybe.Just s_amE ->
+        (s_amE, eta_B1)
+        `cast` (Sym
+                  <(Data.Functor.Identity.NTCo:Identity
+                      <(EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])>)>
+                :: (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])
+                     ~#
+                   Data.Functor.Identity.Identity
+                     (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)]))
+    }
+
+EstrazioneHaskellTesi.lookUp
+  :: EstrazioneHaskellTesi.Loc
+     -> EstrazioneHaskellTesi.M EstrazioneHaskellTesi.Val
+[GblId,
+ Arity=2,
+ Caf=NoCafRefs,
+ Str=DmdType LSm,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)
+         Tmpl= EstrazioneHaskellTesi.lookUp1
+               `cast` (<EstrazioneHaskellTesi.Loc>
+                       -> Sym
+                            <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                                <[(GHC.Base.String, GHC.Types.Int)]>
+                                <Data.Functor.Identity.Identity>
+                                <EstrazioneHaskellTesi.Val>)>
+                       :: (EstrazioneHaskellTesi.Loc
+                           -> [(GHC.Base.String, GHC.Types.Int)]
+                           -> Data.Functor.Identity.Identity
+                                (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)]))
+                            ~#
+                          (EstrazioneHaskellTesi.Loc
+                           -> Control.Monad.Trans.State.Lazy.StateT
+                                [(GHC.Base.String, GHC.Types.Int)]
+                                Data.Functor.Identity.Identity
+                                EstrazioneHaskellTesi.Val))}]
+EstrazioneHaskellTesi.lookUp =
+  EstrazioneHaskellTesi.lookUp1
+  `cast` (<EstrazioneHaskellTesi.Loc>
+          -> Sym
+               <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                   <[(GHC.Base.String, GHC.Types.Int)]>
+                   <Data.Functor.Identity.Identity>
+                   <EstrazioneHaskellTesi.Val>)>
+          :: (EstrazioneHaskellTesi.Loc
+              -> [(GHC.Base.String, GHC.Types.Int)]
+              -> Data.Functor.Identity.Identity
+                   (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)]))
+               ~#
+             (EstrazioneHaskellTesi.Loc
+              -> Control.Monad.Trans.State.Lazy.StateT
+                   [(GHC.Base.String, GHC.Types.Int)]
+                   Data.Functor.Identity.Identity
+                   EstrazioneHaskellTesi.Val))
+
+Rec {
+EstrazioneHaskellTesi.run_varUpdate' [Occ=LoopBreaker]
+  :: EstrazioneHaskellTesi.Loc
+     -> GHC.Types.Int
+     -> EstrazioneHaskellTesi.St
+     -> EstrazioneHaskellTesi.St
+[GblId, Arity=3, Caf=NoCafRefs, Str=DmdType LLS]
+EstrazioneHaskellTesi.run_varUpdate' =
+  \ (name_amI :: EstrazioneHaskellTesi.Loc)
+    (nval_amJ :: GHC.Types.Int)
+    (ds_dwZ :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    case ds_dwZ of _ {
+      [] ->
+        GHC.Types.:
+          @ (GHC.Base.String, GHC.Types.Int)
+          (name_amI, nval_amJ)
+          (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int));
+      : ds1_dx0 xs_amO ->
+        case ds1_dx0 of wild1_Xg { (n_amM, v_amN) ->
+        case GHC.Base.eqString name_amI n_amM of _ {
+          GHC.Types.False ->
+            GHC.Types.:
+              @ (GHC.Base.String, GHC.Types.Int)
+              wild1_Xg
+              (EstrazioneHaskellTesi.run_varUpdate' name_amI nval_amJ xs_amO);
+          GHC.Types.True ->
+            GHC.Types.:
+              @ (GHC.Base.String, GHC.Types.Int) (n_amM, nval_amJ) xs_amO
+        }
+        }
+    }
+end Rec }
+
+EstrazioneHaskellTesi.update1
+  :: EstrazioneHaskellTesi.Loc
+     -> EstrazioneHaskellTesi.Val
+     -> [(GHC.Base.String, GHC.Types.Int)]
+     -> ((), EstrazioneHaskellTesi.St)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LLLm,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Arity=3, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=False)
+         Tmpl= \ (str_amF [Occ=Once] :: EstrazioneHaskellTesi.Loc)
+                 (val_amG [Occ=Once] :: EstrazioneHaskellTesi.Val)
+                 (eta_B1 [Occ=Once] :: [(GHC.Base.String, GHC.Types.Int)]) ->
+                 (GHC.Tuple.(),
+                  EstrazioneHaskellTesi.run_varUpdate' str_amF val_amG eta_B1)}]
+EstrazioneHaskellTesi.update1 =
+  \ (str_amF :: EstrazioneHaskellTesi.Loc)
+    (val_amG :: EstrazioneHaskellTesi.Val)
+    (eta_B1 :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    (GHC.Tuple.(),
+     EstrazioneHaskellTesi.run_varUpdate' str_amF val_amG eta_B1)
+
+EstrazioneHaskellTesi.update
+  :: EstrazioneHaskellTesi.Loc
+     -> EstrazioneHaskellTesi.Val -> EstrazioneHaskellTesi.M ()
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LLLm,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)
+         Tmpl= EstrazioneHaskellTesi.update1
+               `cast` (<EstrazioneHaskellTesi.Loc>
+                       -> <EstrazioneHaskellTesi.Val>
+                       -> (<[(GHC.Base.String, GHC.Types.Int)]>
+                           -> Sym
+                                <(Data.Functor.Identity.NTCo:Identity
+                                    <((), EstrazioneHaskellTesi.St)>)>) ; Sym
+                                                                            <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                                                                                <[(GHC.Base.String,
+                                                                                   GHC.Types.Int)]>
+                                                                                <Data.Functor.Identity.Identity>
+                                                                                <()>)>
+                       :: (EstrazioneHaskellTesi.Loc
+                           -> EstrazioneHaskellTesi.Val
+                           -> [(GHC.Base.String, GHC.Types.Int)]
+                           -> ((), EstrazioneHaskellTesi.St))
+                            ~#
+                          (EstrazioneHaskellTesi.Loc
+                           -> EstrazioneHaskellTesi.Val
+                           -> Control.Monad.Trans.State.Lazy.StateT
+                                [(GHC.Base.String, GHC.Types.Int)]
+                                Data.Functor.Identity.Identity
+                                ()))}]
+EstrazioneHaskellTesi.update =
+  EstrazioneHaskellTesi.update1
+  `cast` (<EstrazioneHaskellTesi.Loc>
+          -> <EstrazioneHaskellTesi.Val>
+          -> (<[(GHC.Base.String, GHC.Types.Int)]>
+              -> Sym
+                   <(Data.Functor.Identity.NTCo:Identity
+                       <((), EstrazioneHaskellTesi.St)>)>) ; Sym
+                                                               <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                                                                   <[(GHC.Base.String,
+                                                                      GHC.Types.Int)]>
+                                                                   <Data.Functor.Identity.Identity>
+                                                                   <()>)>
+          :: (EstrazioneHaskellTesi.Loc
+              -> EstrazioneHaskellTesi.Val
+              -> [(GHC.Base.String, GHC.Types.Int)]
+              -> ((), EstrazioneHaskellTesi.St))
+               ~#
+             (EstrazioneHaskellTesi.Loc
+              -> EstrazioneHaskellTesi.Val
+              -> Control.Monad.Trans.State.Lazy.StateT
+                   [(GHC.Base.String, GHC.Types.Int)]
+                   Data.Functor.Identity.Identity
+                   ()))
+
+EstrazioneHaskellTesi.$wa
+  :: EstrazioneHaskellTesi.Loc
+     -> EstrazioneHaskellTesi.Loc
+     -> [(GHC.Base.String, GHC.Types.Int)]
+     -> (# (), EstrazioneHaskellTesi.St #)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LLL,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=3, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [0 0 0] 400 30}]
+EstrazioneHaskellTesi.$wa =
+  \ (w_sQC :: EstrazioneHaskellTesi.Loc)
+    (w1_sQD :: EstrazioneHaskellTesi.Loc)
+    (w2_sQE :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    (# GHC.Tuple.(),
+       let {
+         $j_sRH
+           :: EstrazioneHaskellTesi.Val
+              -> [(GHC.Base.String, GHC.Types.Int)]
+              -> (EstrazioneHaskellTesi.Val, [(GHC.Base.String, GHC.Types.Int)])
+              -> EstrazioneHaskellTesi.St
+         [LclId, Arity=3]
+         $j_sRH =
+           \ (a5_aB6 :: EstrazioneHaskellTesi.Val)
+             (s'_aB7 :: [(GHC.Base.String, GHC.Types.Int)])
+             _ ->
+             case EstrazioneHaskellTesi.lookUp_varLookUpList' w1_sQD s'_aB7
+             of _ {
+               Data.Maybe.Nothing ->
+                 EstrazioneHaskellTesi.run_varUpdate'
+                   w1_sQD
+                   a5_aB6
+                   (EstrazioneHaskellTesi.run_varUpdate'
+                      w_sQC EstrazioneHaskellTesi.lookUp2 s'_aB7);
+               Data.Maybe.Just s_amE ->
+                 EstrazioneHaskellTesi.run_varUpdate'
+                   w1_sQD
+                   a5_aB6
+                   (EstrazioneHaskellTesi.run_varUpdate' w_sQC s_amE s'_aB7)
+             } } in
+       case EstrazioneHaskellTesi.lookUp_varLookUpList' w_sQC w2_sQE
+       of _ {
+         Data.Maybe.Nothing ->
+           $j_sRH
+             EstrazioneHaskellTesi.lookUp2
+             w2_sQE
+             (EstrazioneHaskellTesi.lookUp2, w2_sQE);
+         Data.Maybe.Just s_amE -> $j_sRH s_amE w2_sQE (s_amE, w2_sQE)
+       } #)
+
+EstrazioneHaskellTesi.swap_program1 [InlPrag=INLINE[0]]
+  :: EstrazioneHaskellTesi.Loc
+     -> EstrazioneHaskellTesi.Loc
+     -> [(GHC.Base.String, GHC.Types.Int)]
+     -> Data.Functor.Identity.Identity ((), EstrazioneHaskellTesi.St)
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LLLm,
+ Unf=Unf{Src=Worker=EstrazioneHaskellTesi.$wa, TopLvl=True, Arity=3,
+         Value=True, ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=False)
+         Tmpl= \ (w_sQC [Occ=Once] :: EstrazioneHaskellTesi.Loc)
+                 (w1_sQD [Occ=Once] :: EstrazioneHaskellTesi.Loc)
+                 (w2_sQE [Occ=Once] :: [(GHC.Base.String, GHC.Types.Int)]) ->
+                 case EstrazioneHaskellTesi.$wa w_sQC w1_sQD w2_sQE
+                 of _ { (# ww1_sQK [Occ=Once], ww2_sQL [Occ=Once] #) ->
+                 (ww1_sQK, ww2_sQL)
+                 `cast` (Sym
+                           <(Data.Functor.Identity.NTCo:Identity
+                               <((), EstrazioneHaskellTesi.St)>)>
+                         :: ((), EstrazioneHaskellTesi.St)
+                              ~#
+                            Data.Functor.Identity.Identity ((), EstrazioneHaskellTesi.St))
+                 }}]
+EstrazioneHaskellTesi.swap_program1 =
+  \ (w_sQC :: EstrazioneHaskellTesi.Loc)
+    (w1_sQD :: EstrazioneHaskellTesi.Loc)
+    (w2_sQE :: [(GHC.Base.String, GHC.Types.Int)]) ->
+    case EstrazioneHaskellTesi.$wa w_sQC w1_sQD w2_sQE
+    of _ { (# ww1_sQK, ww2_sQL #) ->
+    (ww1_sQK, ww2_sQL)
+    `cast` (Sym
+              <(Data.Functor.Identity.NTCo:Identity
+                  <((), EstrazioneHaskellTesi.St)>)>
+            :: ((), EstrazioneHaskellTesi.St)
+                 ~#
+               Data.Functor.Identity.Identity ((), EstrazioneHaskellTesi.St))
+    }
+
+EstrazioneHaskellTesi.swap_program
+  :: EstrazioneHaskellTesi.Loc
+     -> EstrazioneHaskellTesi.Loc -> EstrazioneHaskellTesi.M ()
+[GblId,
+ Arity=3,
+ Caf=NoCafRefs,
+ Str=DmdType LLLm,
+ Unf=Unf{Src=InlineStable, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)
+         Tmpl= EstrazioneHaskellTesi.swap_program1
+               `cast` (<EstrazioneHaskellTesi.Loc>
+                       -> <EstrazioneHaskellTesi.Loc>
+                       -> Sym
+                            <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                                <[(GHC.Base.String, GHC.Types.Int)]>
+                                <Data.Functor.Identity.Identity>
+                                <()>)>
+                       :: (EstrazioneHaskellTesi.Loc
+                           -> EstrazioneHaskellTesi.Loc
+                           -> [(GHC.Base.String, GHC.Types.Int)]
+                           -> Data.Functor.Identity.Identity
+                                ((), [(GHC.Base.String, GHC.Types.Int)]))
+                            ~#
+                          (EstrazioneHaskellTesi.Loc
+                           -> EstrazioneHaskellTesi.Loc
+                           -> Control.Monad.Trans.State.Lazy.StateT
+                                [(GHC.Base.String, GHC.Types.Int)]
+                                Data.Functor.Identity.Identity
+                                ()))}]
+EstrazioneHaskellTesi.swap_program =
+  EstrazioneHaskellTesi.swap_program1
+  `cast` (<EstrazioneHaskellTesi.Loc>
+          -> <EstrazioneHaskellTesi.Loc>
+          -> Sym
+               <(Control.Monad.Trans.State.Lazy.NTCo:StateT
+                   <[(GHC.Base.String, GHC.Types.Int)]>
+                   <Data.Functor.Identity.Identity>
+                   <()>)>
+          :: (EstrazioneHaskellTesi.Loc
+              -> EstrazioneHaskellTesi.Loc
+              -> [(GHC.Base.String, GHC.Types.Int)]
+              -> Data.Functor.Identity.Identity
+                   ((), [(GHC.Base.String, GHC.Types.Int)]))
+               ~#
+             (EstrazioneHaskellTesi.Loc
+              -> EstrazioneHaskellTesi.Loc
+              -> Control.Monad.Trans.State.Lazy.StateT
+                   [(GHC.Base.String, GHC.Types.Int)]
+                   Data.Functor.Identity.Identity
+                   ()))
+
+EstrazioneHaskellTesi.run6 :: [GHC.Types.Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=False,
+         ConLike=False, WorkFree=False, Expandable=False,
+         Guidance=IF_ARGS [] 50 0}]
+EstrazioneHaskellTesi.run6 = GHC.CString.unpackCString# "myVar1"
+
+EstrazioneHaskellTesi.run1 :: GHC.Types.Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=False, Expandable=True,
+         Guidance=IF_ARGS [] 10 20}]
+EstrazioneHaskellTesi.run1 = GHC.Types.I# 1
+
+EstrazioneHaskellTesi.run5 :: [GHC.Types.Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=False,
+         ConLike=False, WorkFree=False, Expandable=False,
+         Guidance=IF_ARGS [] 50 0}]
+EstrazioneHaskellTesi.run5 = GHC.CString.unpackCString# "myVar2"
+
+EstrazioneHaskellTesi.run2 :: GHC.Types.Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=False, Expandable=True,
+         Guidance=IF_ARGS [] 10 20}]
+EstrazioneHaskellTesi.run2 = GHC.Types.I# 7
+
+EstrazioneHaskellTesi.run4 :: [GHC.Types.Char]
+[GblId,
+ Str=DmdType,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=False,
+         ConLike=False, WorkFree=False, Expandable=False,
+         Guidance=IF_ARGS [] 50 0}]
+EstrazioneHaskellTesi.run4 = GHC.CString.unpackCString# "myVar3"
+
+EstrazioneHaskellTesi.run3 :: GHC.Types.Int
+[GblId,
+ Caf=NoCafRefs,
+ Str=DmdType m,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=False, Expandable=True,
+         Guidance=IF_ARGS [] 10 20}]
+EstrazioneHaskellTesi.run3 = GHC.Types.I# 4
+
+EstrazioneHaskellTesi.run
+  :: EstrazioneHaskellTesi.St -> EstrazioneHaskellTesi.St
+[GblId,
+ Arity=1,
+ Str=DmdType L,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=1, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [0] 170 0}]
+EstrazioneHaskellTesi.run =
+  \ (initMem_amV :: EstrazioneHaskellTesi.St) ->
+    case EstrazioneHaskellTesi.$wa
+           EstrazioneHaskellTesi.run6
+           EstrazioneHaskellTesi.run5
+           (EstrazioneHaskellTesi.run_varUpdate'
+              EstrazioneHaskellTesi.run4
+              EstrazioneHaskellTesi.run3
+              (EstrazioneHaskellTesi.run_varUpdate'
+                 EstrazioneHaskellTesi.run5
+                 EstrazioneHaskellTesi.run2
+                 (EstrazioneHaskellTesi.run_varUpdate'
+                    EstrazioneHaskellTesi.run6
+                    EstrazioneHaskellTesi.run1
+                    initMem_amV)))
+    of _ { (# _, ww2_sQL #) ->
+    ww2_sQL
+    }
+
+EstrazioneHaskellTesi.main4 :: GHC.Show.Show [GHC.Types.Char]
+[GblId,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=False,
+         ConLike=True, WorkFree=False, Expandable=True,
+         Guidance=IF_ARGS [] 20 0}]
+EstrazioneHaskellTesi.main4 =
+  GHC.Show.$fShow[] @ GHC.Types.Char GHC.Show.$fShowChar
+
+EstrazioneHaskellTesi.main3 :: EstrazioneHaskellTesi.St
+[GblId,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=False,
+         ConLike=False, WorkFree=False, Expandable=False,
+         Guidance=IF_ARGS [] 20 0}]
+EstrazioneHaskellTesi.main3 =
+  EstrazioneHaskellTesi.run
+    (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))
+
+EstrazioneHaskellTesi.main2 :: GHC.Base.String
+[GblId,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=False,
+         ConLike=False, WorkFree=False, Expandable=False,
+         Guidance=IF_ARGS [] 50 0}]
+EstrazioneHaskellTesi.main2 =
+  GHC.Show.$fShow(,)_$cshowList
+    @ [GHC.Types.Char]
+    @ GHC.Types.Int
+    EstrazioneHaskellTesi.main4
+    GHC.Show.$fShowInt
+    EstrazioneHaskellTesi.main3
+    (GHC.Types.[] @ GHC.Types.Char)
+
+EstrazioneHaskellTesi.main1
+  :: GHC.Prim.State# GHC.Prim.RealWorld
+     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+[GblId,
+ Arity=1,
+ Str=DmdType L,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=1, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=IF_ARGS [0] 50 0}]
+EstrazioneHaskellTesi.main1 =
+  \ (eta_aCR :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+    GHC.IO.Handle.Text.hPutStr2
+      GHC.IO.Handle.FD.stdout
+      EstrazioneHaskellTesi.main2
+      GHC.Types.True
+      eta_aCR
+
+EstrazioneHaskellTesi.main :: GHC.Types.IO ()
+[GblId,
+ Arity=1,
+ Str=DmdType L,
+ Unf=Unf{Src=<vanilla>, TopLvl=True, Arity=0, Value=True,
+         ConLike=True, WorkFree=True, Expandable=True,
+         Guidance=ALWAYS_IF(unsat_ok=True,boring_ok=True)}]
+EstrazioneHaskellTesi.main =
+  EstrazioneHaskellTesi.main1
+  `cast` (Sym <(GHC.Types.NTCo:IO <()>)>
+          :: (GHC.Prim.State# GHC.Prim.RealWorld
+              -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #))
+               ~#
+             GHC.Types.IO ())
+
+
+

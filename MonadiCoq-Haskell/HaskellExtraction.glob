@@ -1,0 +1,28 @@
+DIGEST 03f5c96df981f9a495e26964884dfa1a
+FHaskellExtraction
+R15:20 Coq.Strings.String <> <> lib
+R22:25 Coq.Lists.List <> <> lib
+R27:44 Coq.Strings.String <> <> lib
+R46:59 Coq.Lists.List <> <> lib
+R144:157 StoreMonadFile <> <> lib
+R166:171 StoreMonadFile <> update def
+R181:198 StoreFile Store st def
+R207:224 StoreMonadFile MemoryState State' def
+R277:281 Coq.Strings.Ascii <> <> lib
+R283:288 Coq.Strings.String <> <> lib
+R309:312 Coq.Init.Datatypes <> list ind
+R439:444 Coq.Init.Datatypes <> option ind
+R498:503 Coq.Strings.String <> string ind
+R552:555 Coq.Init.Datatypes <> prod ind
+R596:599 Coq.Init.Datatypes <> bool ind
+R649:655 Coq.Init.Specif <> sumbool ind
+R706:709 Coq.Init.Datatypes <> unit ind
+R843:847 Coq.Strings.Ascii <> ascii ind
+R937:943 Coq.Init.Specif <> sumbool ind
+R993:995 Coq.Init.Datatypes <> nat ind
+R1089:1092 Coq.Init.Datatypes <> unit ind
+R1174:1191 StoreFile Store st def
+R1200:1217 StoreMonadFile MemoryState State' def
+R1228:1245 StoreMonadFile MemoryState State' def
+R1312:1326 StoreMonadFile MemoryState ret def
+R1335:1347 StoreMonadFile MemoryState M def

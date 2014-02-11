@@ -1,0 +1,9 @@
+DIGEST e85fc3cf778dbb150348fb9c8a1fe521
+FHaskellExtractionTesi
+R15:20 Coq.Strings.String <> <> lib
+R22:25 Coq.Lists.List <> <> lib
+R27:44 Coq.Strings.String <> <> lib
+R46:59 Coq.Lists.List <> <> lib
+R137:150 StoreMonadTesi <> <> lib
+R168:190 StoreMonadInterfaceTesi <> <> lib
+R540:543 Coq.Init.Datatypes <> unit ind

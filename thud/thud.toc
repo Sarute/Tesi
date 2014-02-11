@@ -1,0 +1,14 @@
+\select@language {english}
+\contentsline {part}{I\hspace {1em}Parte}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Certified Software}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Limits of Coq Extraction}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Thesis proposal}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Other solutions to the problem}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}Haskell}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}What is Haskell?}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}What can Haskell offer to the programmer?}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Purity}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Modularity}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Elegant code}{9}{subsection.2.2.3}
+\contentsline {part}{II\hspace {1em}Appendici}{11}{part.2}

@@ -1,0 +1,19 @@
+DIGEST fe0207470338fef50c27c1994da19a9e
+FStoreFile
+R16:21 Coq.Strings.String <> <> lib
+R39:42 Coq.Lists.List <> <> lib
+R62:79 Coq.Strings.String <> <> lib
+R97:101 Coq.Strings.Ascii <> <> lib
+R187:200 StateMonadFile <> <> lib
+R221:229 StateMonadFile <> <> mod
+mod 212:216 <> Store
+def 245:247 Store val
+R252:254 Coq.Init.Datatypes <> nat ind
+def 268:273 Store memory
+R278:281 Coq.Init.Datatypes <> list ind
+R290:292 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R284:289 Coq.Strings.String <> string ind
+R293:295 StoreFile Store val def
+def 311:312 Store st
+R317:322 StoreFile Store memory def
+R332:336 StoreFile <> <> mod

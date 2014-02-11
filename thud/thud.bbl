@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+
+\bibitem{Cybele}
+Cybele.
+\newblock \url{http://cybele.gforge.inria.fr/}.
+\newblock Accessed: 2014-04-02.
+
+\bibitem{interview1}
+Hammer principle, programming languages.
+\newblock
+  \url{http://hammerprinciple.com/therighttool/statements/learning-this-language-significantly-changed-how-i}.
+\newblock Accessed: 2014-04-02.
+
+\bibitem{interview2}
+Hammer principle, programming languages.
+\newblock
+  \url{http://hammerprinciple.com/therighttool/statements/i-would-recommend-most-programmers-learn-this-lang}.
+\newblock Accessed: 2014-04-02.
+
+\bibitem{Compcert}
+{Inria} compcert.
+\newblock \url{http://compcert.inria.fr/index.html}.
+\newblock Accessed: 2014-31-01.
+
+\bibitem{JSCert}
+Jscert: Certified javascript.
+\newblock \url{http://http://jscert.org}.
+\newblock Accessed: 2014-31-01.
+
+\bibitem{Nuprl}
+Prl project: Proof/program refinement logic.
+\newblock \url{http://www.nuprl.org/}.
+\newblock Accessed: 2014-05-02.
+
+\bibitem{Backus:1978:CPL}
+John Backus.
+\newblock Can programming be liberated from the {von Neumann} style? {A}
+  functional style and its algebra of programs.
+\newblock 21(8):613--641, August 1978.
+\newblock Reproduced in ``Selected Reprints on Dataflow and Reduction
+  Architectures'' ed. S. S. Thakkar, IEEE, 1987, pp. 215-243.
+
+\bibitem{Bourbaki98}
+N.~Bourbaki and J.~Meldrum.
+\newblock {\em Elements of the History of Mathematics}.
+\newblock U.S. Government Printing Office, 1998.
+
+\bibitem{claret:hal-00870110}
+Guillaume Claret, Lourdes Del~Carmen Gonzalez~Huesca, Yann R{\'e}gis-Gianas,
+  and Beta Ziliani.
+\newblock {Lightweight proof by reflection using a posteriori simulation of
+  effectful computation}.
+\newblock July 2013.
+
+\bibitem{Dijkstra12}
+Gabe Dijkstra.
+\newblock {Experimentation project report:Translating Haskell programs to Coq
+  programs}.
+\newblock December 2012.
+
+\bibitem{Dumas:2014:coqstates}
+Jean-Guillaume Dumas, Dominique Duval, Burak Ekici, and Damien Pous.
+\newblock Formal verification in {Coq} of program properties involving the
+  global state effect.
+\newblock In Christine Tasson, editor, {\em 25e Journ\'ees Francophones des
+  Langages Applicatifs, Fr\'ejus}, January 2014.
+
+\bibitem{Gonthier08}
+Georges Gonthier.
+\newblock Formal proof–the four-color theorem.
+\newblock {\em Notices of the American Math- ematical Society}, 2008.
+
+\bibitem{hughes:matters-cj}
+J.~Hughes.
+\newblock {Why Functional Programming Matters}.
+\newblock {\em Computer Journal}, 32(2):98--107, 1989.
+
+\bibitem{Moggi91}
+Eugenio Moggi.
+\newblock Notions of computation and monads.
+\newblock {\em Inf. Comput.}, 93(1):55--92, July 1991.
+
+\bibitem{paulinintroduction}
+Christine Paulin-Mohring.
+\newblock Introduction to the coq proof-assistant for practical software
+  verification.
+
+\bibitem{haskell98}
+Simon {Peyton Jones} et~al.
+\newblock The {Haskell} 98 language and libraries: The revised report.
+\newblock {\em Journal of Functional Programming}, 13(1):0--255, Jan 2003.
+\newblock \url{http://www.haskell.org/definition/}.
+
+\bibitem{Shao10}
+Zhong Shao.
+\newblock Certified software.
+\newblock {\em Communications of the ACM}, 2010.
+
+\end{thebibliography}
