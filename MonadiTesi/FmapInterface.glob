@@ -1,0 +1,48 @@
+DIGEST 876761740de4ec378bac5f12dd952c7e
+FFmapInterface
+R75:92 MonadInterfaceTesi <> <> lib
+R128:142 MonadInterfaceTesi <> <> mod
+mod 106:123 <> FmapMonadInterface
+R179:193 MonadInterfaceTesi <> <> mod
+ax 207:210 FmapMonadInterface fmap
+R253:253 FmapInterface FmapMonadInterface M defax
+R255:255 FmapInterface <> B var
+R246:246 FmapInterface FmapMonadInterface M defax
+R248:248 FmapInterface <> A var
+R240:240 FmapInterface <> B var
+R235:235 FmapInterface <> A var
+ax 265:273 FmapMonadInterface fmapAxiom
+R296:296 FmapInterface FmapMonadInterface M defax
+R298:298 FmapInterface <> A var
+R311:311 FmapInterface <> B var
+R305:305 FmapInterface <> A var
+R324:326 Coq.Init.Logic <> :type_scope:x_'='_x not
+R315:318 FmapInterface FmapMonadInterface fmap defax
+R322:323 FmapInterface <> xs var
+R320:320 FmapInterface <> f var
+R329:334 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R353:353 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R327:328 FmapInterface <> xs var
+R344:346 FmapInterface FmapMonadInterface ret defax
+R349:349 FmapInterface <> f var
+R351:351 FmapInterface <> a var
+def 368:377 FmapMonadInterface Axiom1Left
+R391:391 FmapInterface FmapMonadInterface M defax
+R393:393 FmapInterface <> A var
+R406:406 FmapInterface <> B var
+R400:400 FmapInterface <> A var
+R412:415 FmapInterface FmapMonadInterface fmap defax
+R419:420 FmapInterface <> xs var
+R417:417 FmapInterface <> f var
+def 434:444 FmapMonadInterface Axiom1Right
+R458:458 FmapInterface FmapMonadInterface M defax
+R460:460 FmapInterface <> A var
+R472:472 FmapInterface <> B var
+R467:467 FmapInterface <> A var
+R480:485 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R504:504 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R478:479 FmapInterface <> xs var
+R495:497 FmapInterface FmapMonadInterface ret defax
+R500:500 FmapInterface <> f var
+R502:502 FmapInterface <> a var
+R513:530 FmapInterface <> <> mod

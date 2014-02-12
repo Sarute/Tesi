@@ -1,21 +1,17 @@
-DIGEST 2750b10c1a345839ba3f538097ece456
+DIGEST 6114df8736c94795b6255721cf8a6a93
 FMaybeMonadTesi
 mod 68:77 <> ProvaMaybe
 R96:105 MaybeMonad <> <> lib
 R123:140 MonadInterfaceTesi <> <> lib
 R157:175 MaybeMonad <> <> modtype
 def 214:225 ProvaMaybe StrictMaybe1
-R242:242 MaybeMonadTesi ProvaMaybe M defax
-R244:244 MaybeMonadTesi <> B var
-R237:237 MaybeMonadTesi <> A var
-R259:262 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
-R250:256 MaybeMonadTesi ProvaMaybe Nothing defax
-R258:258 MaybeMonadTesi <> A var
-R263:263 MaybeMonadTesi <> z var
+R243:247 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R262:263 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R234:240 MaybeMonadTesi ProvaMaybe Nothing defax
+R242:242 MaybeMonadTesi <> A var
+R257:259 MaybeMonadTesi ProvaMaybe ret defax
+R261:261 MaybeMonadTesi <> z var
 def 277:288 ProvaMaybe StrictMaybe2
-R304:304 MaybeMonadTesi ProvaMaybe M defax
-R306:306 MaybeMonadTesi <> B var
-R299:299 MaybeMonadTesi <> A var
-R311:317 MaybeMonadTesi ProvaMaybe Nothing defax
-R319:319 MaybeMonadTesi <> B var
-R328:337 MaybeMonadTesi <> <> mod
+R296:302 MaybeMonadTesi ProvaMaybe Nothing defax
+R304:304 MaybeMonadTesi <> A var
+R313:322 MaybeMonadTesi <> <> mod

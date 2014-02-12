@@ -4,16 +4,14 @@ import Prelude
 import Data.Maybe
 
 type M a = Maybe a
-
 ret :: a1 -> M a1
 ret = Just
 
 bind :: (M a1) -> (a1 -> M a2) -> M a2
 bind l f =
   case l of {
-   Nothing -> Nothing;
-   Just a -> f a}
-
+	Just a -> f a;
+	Nothing -> Nothing}
 
 nothing :: M a1
 nothing = Nothing
@@ -32,11 +30,11 @@ nothing0 :: M0 a1
 nothing0 =
   nothing
 
-strictMaybe1 :: (a1 -> M0 a2) -> M0 a2
-strictMaybe1 z =
-  bind0 nothing0 z
+strictMaybe1 :: M0 a1
+strictMaybe1 =
+  bind0 nothing0 (\z -> ret0 z)
 
-strictMaybe2 :: (a1 -> M0 a2) -> M0 a2
-strictMaybe2 z =
-  Nothing
+strictMaybe2 :: M0 a1
+strictMaybe2 =
+  nothing0
 

@@ -1,7 +1,7 @@
 module ExtractionCert where
 
 import Prelude
-
+import Control.Monad.Trans.State
 
 type M a = State St a
 
