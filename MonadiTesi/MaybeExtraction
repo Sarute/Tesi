@@ -1,0 +1,12 @@
+Add LoadPath "/Users/Saretta/Desktop/CMTI/Tesi/MonadiTesi".
+Require Import MaybeMonadTesi.
+
+
+Extraction Language Haskell.
+
+Extract Inductive ProvaMaybe.M =>  Maybe ["Nothing" "Just"].
+Extract Constant ProvaMaybe.ret => "return".
+Extract Constant ProvaMaybe.bind => "(>>=)".
+
+
+Extraction "ProvaMaybe" ProvaMaybe.

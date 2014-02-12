@@ -1,0 +1,12 @@
+Add LoadPath "/Users/Saretta/Desktop/CMTI/Tesi/MonadiTesi".
+Require Import MaybeMonad.
+
+
+Module ProvaMaybe : MaybeMonadInterface.
+
+Include Type MaybeMonadInterface.
+
+
+
+End ProvaMaybe.
+

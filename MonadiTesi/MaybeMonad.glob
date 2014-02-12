@@ -1,0 +1,23 @@
+DIGEST 2940ad52acb74b46a88f408f462cfd5c
+FMaybeMonad
+R75:92 MonadInterfaceTesi <> <> lib
+R128:142 MonadInterfaceTesi <> <> mod
+mod 105:123 <> MaybeMonadInterface
+R180:194 MonadInterfaceTesi <> <> mod
+ax 208:214 MaybeMonadInterface Nothing
+R236:236 MaybeMonad MaybeMonadInterface M defax
+R238:238 MaybeMonad <> A var
+ax 248:257 MaybeMonadInterface Strictness
+R299:299 MaybeMonad MaybeMonadInterface M defax
+R301:301 MaybeMonad <> B var
+R294:294 MaybeMonad <> A var
+R322:325 Coq.Init.Logic <> :type_scope:x_'='_x not
+R335:335 Coq.Init.Logic <> :type_scope:x_'='_x not
+R305:305 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R315:320 MonadInterfaceTesi MONAD_INTERFACE :monad_scope:x_'>>='_x not
+R306:312 MaybeMonad MaybeMonadInterface Nothing defax
+R314:314 MaybeMonad <> A var
+R321:321 MaybeMonad <> f var
+R326:332 MaybeMonad MaybeMonadInterface Nothing defax
+R334:334 MaybeMonad <> B var
+R346:364 MaybeMonad <> <> mod
